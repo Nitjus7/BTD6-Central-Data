@@ -1,8 +1,16 @@
 {
   "body": [
     {
+      "title": "Website v0.6.1",
+      "description": "Minor fixes to various places, including a fix to an issue occuring with lots of decimal places. Full notes can be found in the Discord server.",
+      "imageSrc": null,
+      "links": null,
+      "dateInMilliseconds": 1698085463528,
+      "big": false
+    },
+    {
       "title": "Website v0.6.0: PLAYER AND CUSTOM MAP LOOKUP",
-      "description": "This update adds the new Community page to the website with Map Lookup and User Lookup. Along with this, many more small changes have been made to various pages on the website. If you see an issue, report it to the BTD6 Central Discord Server linked below.",
+      "description": "This update adds the new Community page to the website with Map Lookup and User Lookup. Along with this, many more small changes have been made to various pages on the website, including a new popup animation. If you see an issue, report it to the BTD6 Central Discord Server linked below.",
       "imageSrc": null,
       "links": [
             {
@@ -16,6 +24,61 @@
           ],
       "dateInMilliseconds": 1698033757452,
       "big": true
+    },
+    {
+      "title": "BTD6 Update 39.0: MAP EDITOR",
+      "description": "This gigantic update not only features an extensive Map Editor, but makes a massive rework to all Paragons, adds an Etienne skin, and makes a massive amount of balance changes. Check them out in the notes linked below.",
+      "imageSrc": null,
+      "links": [
+        {
+          "link": "https://www.reddit.com/r/btd6/s/TmT14SIdk1",
+          "name": "BTD6 Update 39.0 Patch Notes"
+        }
+      ],
+      "dateInMilliseconds": 1696899600000,
+      "big": true
+    },
+    {
+      "title": "Website v0.5.4",
+      "description": "All stats use percents instead of multipliers (so 0.5x is now listed as 50%), nav bar much smaller, popups no longer let you scroll, and other minor changes and fixes.",
+      "imageSrc": null,
+      "links": null,
+      "dateInMilliseconds": 1696160280000,
+      "big": false
+    },
+    {
+      "title": "Website v0.5.3",
+      "description": "Added Vortex stats, and made some fixes to incorrect Bloonarius stats.",
+      "imageSrc": null,
+      "links": [
+        {
+          "link": "https://nitjus7.github.io/BTD6-Central/stats.html?type=bosses&boss=vortex&tier=1",
+          "name": "Look up Vortex stats"
+        }
+      ],
+      "dateInMilliseconds": 1695875100000,
+      "big": false
+    },
+    {
+      "title": "Website v0.5.2",
+      "description": "Added stats for Phayze, plus some minor reformatting for Boss stats.",
+      "imageSrc": null,
+      "links": [
+        {
+          "link": "https://nitjus7.github.io/BTD6-Central/stats.html?type=bosses&tier=1&boss=phayze",
+          "name": "Look up Phayze stats"
+        }
+      ],
+      "dateInMilliseconds": 1695858000000,
+      "big": false
+    },
+    {
+      "title": "Website v0.5.1",
+      "description": "Added images for Dreadrock Bloons, plus some other small fixes.",
+      "imageSrc": null,
+      "links": null,
+      "dateInMilliseconds": 1695605280000,
+      "big": false
     },
     {
       "title": "Website v0.5.0: BLOON STATS",
