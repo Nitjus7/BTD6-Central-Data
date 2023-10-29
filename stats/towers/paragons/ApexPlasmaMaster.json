@@ -1,2 +1,29 @@
 {
-}
+        "tower": "dart",
+        "name": "Apex Plasma Master",
+        "img": null,
+        "atk": {
+            "name": "Plasma Ball",
+            "dmg": {
+                "base": 15,
+                "bonusCeram": 75,
+                "bonusBoss": 80
+            },
+            "pierce": 200,
+            "atkCD": 0.4,
+            "projectiles": 3,
+            "special": "Ricochets off of walls. Can rehit bloons.",
+            "emits": {
+                "name": "Mini Ball",
+                "frequency": "Once at half pierce remaining and another time when destroyed.",
+                "dmg": {
+                    "base": 15,
+                    "bonusCeram": 75,
+                    "bonusBoss": 80
+                }, 
+                "pierce": 200,
+                "projectiles": 2,
+                "special": "Ricochets off of walls. Can rehit bloons."
+            }
+        }
+    }
