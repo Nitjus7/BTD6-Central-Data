@@ -14,6 +14,7 @@
             "projectiles": 3,
             "special": "Ricochets off of walls. Can rehit bloons.",
             "emits": {
+                "type": "projectile",
                 "name": "Mini Ball",
                 "frequency": "Once at half pierce remaining and another time when destroyed.",
                 "dmg": {
