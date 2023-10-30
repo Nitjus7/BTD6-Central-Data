@@ -1,0 +1,87 @@
+{
+    "tower": "ninja",
+    "name": "Ascended Shadow",
+    "displayRange": 70,
+    "img": null,
+    "attacks": [
+        {
+            "name": "Shadow Shurikens",
+            "dmg": {
+                "base": 32,
+                "bonusCamo": 6,
+                "bonusBoss": 32
+            },
+            "pierce": 4,
+            "rate": 0.217,
+            "projectiles": 8,
+            "special": "Has strong seeking.",
+            "emits": [
+                {
+                    "name": "Distraction",
+                    "type": "status",
+                    "frequency": "15% chance per Bloon hit"
+                }
+            ]
+        },
+        {
+            "name": "Flash Bomb",
+            "dmg": {
+                "base": 96,
+                "bonusCamo": 20,
+                "bonusBoss": 96
+            },
+            "pierce": 50,
+            "rate": 1.5,
+            "projectiles": 5,
+            "emits": [
+                {
+                    "name": "Blue Shurikens",
+                    "type": "attack",
+                    "frequency": "After a Flash Bomb explodes",
+                    "dmg": {
+                        "base": 80,
+                        "bonusCamo": 16,
+                        "bonusBoss": 80
+                    },
+                    "pierce": 20,
+                    "projectiles": 3,
+                    "special": "Has strong seeking."
+                },
+                {
+                    "name": "Stun",
+                    "type": "status",
+                    "frequency": "After a Flash Bomb explodes",
+                    "duration": {
+                        "bloons": 3,
+                        "blimps": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Sticky Bomb",
+            "dmg": {
+                "base": 16000,
+                "bonusCamo": 3200,
+                "bonusBoss": 32000
+            },
+            "pierce": null,
+            "rate": 5.5,
+            "projectiles": 1,
+            "emits": [
+                {
+                    "name": "Sticky Bomb Explosion",
+                    "type": "attack",
+                    "frequency": "After a Sticky Bomb explodes",
+                    "dmg": {
+                        "base": 3500,
+                        "bonusCamo": 700,
+                        "bonusBoss": 1400
+                    },
+                    "pierce": 10,
+                    "projectiles": 1
+                }
+            ]
+        }
+    ]
+}
