@@ -8,7 +8,7 @@
             "name": "Glaive",
             "dmg": {
                 "base": 20,
-                "bonusCeramic": 20,
+                "bonusCeram": 20,
                 "bonusMOAB": 20,
                 "bonusBoss": 50
             },
@@ -34,7 +34,7 @@
             "name": "Orbital Glaives",
             "dmg": {
                 "base": 42,
-                "bonusCeramic": 20,
+                "bonusCeram": 20,
                 "bonusBoss": 150
             },
             "rangeOverride": 50,
@@ -58,7 +58,6 @@
                     "frequency": "After a MOAB Press projectile expires",
                     "dmg": {
                         "base": 2500,
-                        "bonusCamo": 700,
                         "bonusBoss": 5000
                     },
                     "pierce": 10,
