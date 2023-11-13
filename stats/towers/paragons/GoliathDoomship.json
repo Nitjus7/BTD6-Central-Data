@@ -1,0 +1,79 @@
+{
+    "tower": "ace",
+    "name": "Goliath Doomship",
+    "img": null,
+    "abilities": [
+    {
+        "name": "Carpet Bomb",
+        "cooldown": 40,
+        "description": "Drops 8 carpet bombs along the selected path.",
+        "emits": [
+            {
+                "name": "Carpet Bombs",
+                "type": "attack",
+                "frequency": null,
+                "dmg": {
+                    "base": 20000,
+                    "bonusBoss": 20000
+                },
+                "pierce": 50,
+                "rate": 0,
+                "emits": [
+                    {
+                        "name": "Carpet Bomb Stun",
+                        "type": "status",
+                        "frequency": "Applies if an affected Bloon does not pop.",
+                        "duration": 8
+                    }
+                ]
+            }
+        ]
+    }
+    ],
+    "attacks": [
+    {
+        "name": "Radial Darts",
+        "dmg": {
+            "base": 200,
+            "bonusBoss": 200
+        },
+        "pierce": 50,
+        "rate": 0.66,
+        "projectiles": 16
+    },
+    {
+        "name": "Forward-Firing Darts",
+        "dmg": {
+            "base": 300,
+            "bonusBoss": 300
+        },
+        "pierce": 50,
+        "rate": 0.11,
+        "projectiles": 2,
+        "special": "Only fires while the ace is facing a Bloon"
+    },
+    {
+        "name": "Heat-Seeking Missiles",
+        "dmg": {
+            "base": 200,
+            "bonusBoss": 200
+        },
+        "pierce": 1,
+        "rate": 0.66,
+        "projectiles": 4,
+        "emits": [
+            {
+                "name": "Missile Explosion",
+                "type": "attack",
+                "frequency": "Occurs after the last pierce of the Heat-Seeking Missile is used.",
+                "dmg": {
+                    "base": 200,
+                    "bonusBoss": 400
+                },
+                "pierce": 50,
+                "rate": 0
+            }
+        ]
+    }
+    ]
+}
