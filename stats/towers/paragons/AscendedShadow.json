@@ -36,7 +36,7 @@
             "emits": [
                 {
                     "name": "Blue Shurikens",
-                    "type": "attack",
+                    "type": "projectile",
                     "frequency": "After a Flash Bomb explodes",
                     "dmg": {
                         "base": 80,
