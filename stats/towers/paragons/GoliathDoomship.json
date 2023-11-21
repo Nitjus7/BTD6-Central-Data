@@ -10,7 +10,7 @@
         "emits": [
             {
                 "name": "Carpet Bombs",
-                "type": "attack",
+                "type": "projectile",
                 "frequency": null,
                 "dmg": {
                     "base": 20000,
@@ -64,7 +64,7 @@
         "emits": [
             {
                 "name": "Missile Explosion",
-                "type": "attack",
+                "type": "projectile",
                 "frequency": "Occurs after the last pierce of the Heat-Seeking Missile is used.",
                 "dmg": {
                     "base": 200,
