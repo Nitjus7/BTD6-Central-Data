@@ -54,7 +54,7 @@
             "emits": [
                 {
                     "name": "MOAB Press Explosion",
-                    "type": "attack",
+                    "type": "projectile",
                     "frequency": "After a MOAB Press projectile expires",
                     "dmg": {
                         "base": 2500,
@@ -65,7 +65,7 @@
                     "emits": [
                         {
                             "name": "MOAB Press Burn",
-                            "type": "attack",
+                            "type": "projectile",
                             "frequency": "Applied to every Bloon hit by the MOAB Press Explosion",
                             "dmg": {
                                 "base": 500
