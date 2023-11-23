@@ -81,7 +81,8 @@
                     "pierce": 10,
                     "projectiles": 1
                 }
-            ]
+            ],
+            "special": "Does damage after a 3s delay."
         }
     ]
 }
