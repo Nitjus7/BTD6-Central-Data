@@ -2,6 +2,7 @@
     "tower": "ace",
     "name": "Goliath Doomship",
     "img": null,
+    "cost": 900000,
     "abilities": [
     {
         "name": "Carpet Bomb",
