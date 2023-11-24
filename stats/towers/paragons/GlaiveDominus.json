@@ -3,6 +3,7 @@
     "name": "Glaive Domino's Pizza",
     "displayRange": 60,
     "img": null,
+    "cost": 275000,
     "attacks": [
         {
             "name": "Glaive",
