@@ -13,7 +13,6 @@
             {
                 "name": "Carpet Bombs",
                 "type": "projectile",
-                "frequency": null,
                 "dmg": {
                     "base": 20000,
                     "bonusBoss": 20000
