@@ -1,0 +1,71 @@
+{
+    "tower": "boat",
+    "name": "Navarch of the Seas",
+    "img": null,
+    "cost": 550000,
+    "abilities": [
+    {
+        "name": "Mega Hook",
+        "type": "ability",
+        "cooldown": 30,
+        "description": "Captures the strongest Bloon on screen (including BADs), guaranteeing its death. Max 2 uses per round."
+    },
+    {
+        "name": "Rapid Hooks",
+        "type": "passive",
+        "cooldown": 10,
+        "description": "Uses up to 10 hooks in quick succession, which work on up to ZOMGs. MOABs, BFBs, and DDTs use 1 hook while ZOMGs use 2."
+    }
+    ],
+    "attacks": [
+    {
+        "name": "Plasma Turrets",
+        "type": "attack",
+        "dmg": {
+            "base": 25,
+            "bonusMOAB": 30,
+            "bonusBoss": 30
+        },
+        "pierce": 10,
+        "rate": 0.25,
+        "projectiles": 10,
+        "special": "There are 3 turrets on each side of the ship. Both sides can fire at the same time."
+    },
+    {
+        "name": "Cannonballs",
+        "type": "attack",
+        "dmg": {
+            "base": 60,
+            "bonusMOAB": 60,
+            "bonusBoss": 60
+        },
+        "pierce": 28,
+        "rate": 0.429,
+        "projectiles": 3,
+        "special": "There are 3 cannons on each side of the ship. Both sides can fire at the same time."
+    },
+    {
+        "name": "Fighter Plane Darts",
+        "type": "attack",
+        "dmg": {
+            "base": 44,
+            "bonusBoss": 44
+        },
+        "pierce": 14,
+        "rate": 0.18,
+        "projectiles": 1
+    },
+    {
+        "name": "Fighter Plane Missiles",
+        "type": "attack",
+        "dmg": {
+            "base": 0,
+            "bonusMOAB": 200,
+            "bonusBoss": 200
+        },
+        "pierce": 10,
+        "rate": 1.8,
+        "projectiles": 4
+    }
+    ]
+}
