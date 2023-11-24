@@ -6,7 +6,7 @@
     "abilities": [
     {
         "name": "Carpet Bomb",
-        "type": "ability",
+        "type": "activated ability",
         "cooldown": 40,
         "description": "Drops 8 carpet bombs along the selected path.",
         "emits": [
