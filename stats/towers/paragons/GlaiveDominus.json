@@ -7,6 +7,7 @@
     "attacks": [
         {
             "name": "Glaive",
+            "type": "attack",
             "dmg": {
                 "base": 20,
                 "bonusCeram": 20,
@@ -33,6 +34,7 @@
         },
         {
             "name": "Orbital Glaives",
+            "type": "attack",
             "dmg": {
                 "base": 42,
                 "bonusCeram": 20,
@@ -45,6 +47,7 @@
         },
         {
             "name": "MOAB Press",
+            "type": "attack",
             "dmg": {
                 "base": 1,
                 "bonusMOAB": 19
