@@ -3,6 +3,7 @@
     "name": "Ascended Shadow",
     "displayRange": 70,
     "img": null,
+    "cost": 500000,
     "attacks": [
         {
             "name": "Shadow Shurikens",
