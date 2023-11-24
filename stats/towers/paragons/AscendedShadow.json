@@ -7,6 +7,7 @@
     "attacks": [
         {
             "name": "Shadow Shurikens",
+            "type": "attack",
             "dmg": {
                 "base": 32,
                 "bonusCamo": 6,
@@ -26,6 +27,7 @@
         },
         {
             "name": "Flash Bomb",
+            "type": "attack",
             "dmg": {
                 "base": 96,
                 "bonusCamo": 20,
@@ -61,6 +63,7 @@
         },
         {
             "name": "Sticky Bomb",
+            "type": "attack",
             "dmg": {
                 "base": 16000,
                 "bonusCamo": 3200,
