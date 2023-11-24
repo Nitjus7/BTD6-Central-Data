@@ -34,6 +34,7 @@
     "attacks": [
     {
         "name": "Radial Darts",
+        "type": "attack",
         "dmg": {
             "base": 200,
             "bonusBoss": 200
@@ -44,6 +45,7 @@
     },
     {
         "name": "Forward-Firing Darts",
+        "type": "attack",
         "dmg": {
             "base": 300,
             "bonusBoss": 300
@@ -55,6 +57,7 @@
     },
     {
         "name": "Heat-Seeking Missiles",
+        "type": "attack",
         "dmg": {
             "base": 200,
             "bonusBoss": 200
