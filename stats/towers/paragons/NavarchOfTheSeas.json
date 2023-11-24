@@ -6,13 +6,13 @@
     "abilities": [
     {
         "name": "Mega Hook",
-        "type": "ability",
+        "type": "activated bility",
         "cooldown": 30,
         "description": "Captures the strongest Bloon on screen (including BADs), guaranteeing its death. Max 2 uses per round."
     },
     {
         "name": "Rapid Hooks",
-        "type": "passive",
+        "type": "passive ability",
         "cooldown": 10,
         "description": "Uses up to 10 hooks in quick succession, which work on up to ZOMGs. MOABs, BFBs, and DDTs use 1 hook while ZOMGs use 2."
     }
