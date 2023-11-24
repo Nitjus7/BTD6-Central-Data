@@ -6,7 +6,7 @@
     "abilities": [
     {
         "name": "Mega Hook",
-        "type": "activated bility",
+        "type": "activated ability",
         "cooldown": 30,
         "description": "Captures the strongest Bloon on screen (including BADs), guaranteeing its death. Max 2 uses per round."
     },
