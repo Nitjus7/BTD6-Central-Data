@@ -2,6 +2,7 @@
         "tower": "dart",
         "name": "Apex Plasma Master",
         "img": null,
+        "cost": 150000,
         "attacks": [{
             "name": "Plasma Ball",
             "dmg": {
