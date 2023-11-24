@@ -5,6 +5,7 @@
         "cost": 150000,
         "attacks": [{
             "name": "Plasma Ball",
+        "type": "attack",
             "dmg": {
                 "base": 15,
                 "bonusCeram": 75,
