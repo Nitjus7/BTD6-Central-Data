@@ -120,7 +120,7 @@
             },
             {
                 "name": "Expire Explosion",
-                "type": "attack",
+                "type": "projectile",
                 "frequency": "When this sentry is sold or replaced",
                 "dmg": {
                     "base": 100
