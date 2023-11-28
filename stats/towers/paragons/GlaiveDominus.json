@@ -98,7 +98,7 @@
     "support": [
         {
             "name": "Primary Speed Buff",
-            "description": "For some reason, all Primary Towers on screen, including Primary Paragons, take 90% as long between attacks. (+11.1% attack speed)"
+            "description": "For some reason, all Primary Towers on screen, including Primary Paragons, get 90% attack rate. (+11.1% attack speed)"
         }
     ]
 }
