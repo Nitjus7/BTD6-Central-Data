@@ -1,0 +1,148 @@
+{
+    "tower": "engi",
+    "name": "Master Builder",
+    "img": null,
+    "cost": 650000,
+    "abilities": [
+    {
+        "name": "Specialized Sentry Deployment",
+        "type": "activated ability",
+        "cooldown": 20,
+        "description": "Cycles between deploying Green, Red, and Blue Mega Sentries in that order.",
+        "emits": [
+            {
+                "name": "Green Mega Sentry",
+                "type": "subtower",
+                "emits": [
+                    {
+                        "name": "Energy Beam",
+                        "type": "attack",
+                        "dmg": {
+                            "base": 20,
+                            "bonusBoss": 30
+                        },
+                        "pierce": 10,
+                        "rate": 0.2
+                    },
+                    {
+                        "name": "Energy Endpoint",
+                        "type": "attack",
+                        "dmg": {
+                            "base": 100,
+                            "bonusBoss": 250
+                        },
+                        "pierce": 10,
+                        "rate": 0.2,
+                        "special": "Does not appear if all pierce is being used by the Beam."
+                    }
+                ]
+            },
+            {
+                "name": "Red Mega Sentry",
+                "type": "subtower",
+                "emits": [
+                    {
+                        "name": "Red Plasma",
+                        "type": "attack",
+                        "dmg": {
+                            "base": 5,
+                            "bonusBoss": 4
+                        },
+                        "pierce": 10,
+                        "rate": 0.05,
+                        "projectiles": 4
+                    }
+                ]
+            },
+            {
+                "name": "Blue Mega Sentry",
+                "type": "subtower",
+                "emits": [
+                    {
+                        "name": "MOAB Destroyer Missile",
+                        "type": "attack",
+                        "dmg": {
+                            "base": 3,
+                            "bonusMOAB": 750
+                        },
+                        "pierce": 20,
+                        "rate": 0.5,
+                        "range": 70,
+                        "special": "Uses 2 pierce per Bloon hit",
+                        "emits": [
+                            {
+                                "name": "Missile Explosion",
+                                "type": "projectile",
+                                "frequency": "On every Bloon hit",
+                                "dmg": {
+                                    "base": 3,
+                                    "bonusMOAB": 2,
+                                    "bonusBoss": 4
+                                },
+                                "pierce": 20,
+                                "range": 30
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+    ],
+    "attacks": [
+    {
+        "name": "Mega Sentry Expire Explosion",
+        "type": "projectile",
+        "frequency": "When a Mega Sentry is sold or replaced",
+        "dmg": {
+            "base": 30000,
+            "bonusBoss": 40000
+        },
+        "pierce": 100,
+        "range": 50
+    },
+    {
+        "name": "Modified Paragon Sentry",
+        "type": "subtower",
+        "rate": 6,
+        "special": "Deployed by every Mega Sentry.",
+        "emits": [
+            {
+                "name": "Plasma Balls",
+                "type": "attack",
+                "dmg": {
+                    "base": 4,
+                    "bonusBoss": 2
+                },
+                "pierce": 5,
+                "rate": 0.06,
+                "lifespan": 19,
+                "range": 50
+            },
+            {
+                "name": "Expire Explosion",
+                "type": "attack",
+                "frequency": "When this sentry is sold or replaced",
+                "dmg": {
+                    "base": 100
+                },
+                "pierce": 50,
+                "range": 50
+            }
+        ]
+    },
+    {
+        "name": "Nail Gun",
+        "type": "attack",
+        "dmg": {
+            "base": 100,
+            "bonusBoss": 100
+        },
+        "pierce": 15,
+        "rate": 0.3,
+        "range": 70,
+        "projectiles": 3,
+        "special": "Gets +10% attack speed at the end of each round. Maxes at an attack rate of 0.05sec at all degrees."
+    }
+    ]
+}
