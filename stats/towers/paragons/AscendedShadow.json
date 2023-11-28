@@ -88,5 +88,11 @@
             ],
             "special": "Does damage after a 3s delay."
         }
-    ]
+    ],
+    "support": [
+        {
+            "name": "Global Camo",
+            "description": "All towers on screen get Camo detection."
+        }
+    ] 
 }
