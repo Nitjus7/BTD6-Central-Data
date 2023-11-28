@@ -67,5 +67,20 @@
         "rate": 1.8,
         "projectiles": 4
     }
+    ],
+    "support":
+    [
+        {
+            "name": "Trade Empire Buff",
+            "description": "All Merchantman and Favored Trades Buccaneers on screen earn extra money based on how many of them there are. +$10 for each Merchantman and +$20 for each Favored Trades. They also get a bonus +10 base damage, +10 bonus damage to Blimps, and +10 bonus damage to Ceramics."
+        },
+        {
+            "name": "Sellback Buff",
+            "description": "Towers in range sell for 10% more of their original cost. (80% instead of 70%)"
+        },
+        {
+            "name": "Carrier Flagship Buff",
+            "description": "All water-based towers and Monkey Aces on screen get 85% attack rate (+17.65% attack speed). This includes Goliath Doomship."
+        }
     ]
 }
