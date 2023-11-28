@@ -108,6 +108,19 @@
         "special": "Consumes 50 Mana per attack."
     },
     {
+    "name": "Zombie Bloons",
+    "type": "attack",
+    "dmg": {
+        "base": 150,
+        "bonusBoss": 150
+    },
+    "pierce": 50,
+    "rate": null,
+    "lifespan": 7,
+    "range": 80,
+    "special": "Spawned when Bloons are popped within 80 range. Consumes 250 Mana per Zombie Bloon."
+    },
+    {
         "name": "Dark Phoenix Flame",
         "type": "attack",
         "dmg": {
@@ -129,19 +142,6 @@
         "rate": 2,
         "projectiles": 8,
         "special": "Consumes 50 Mana per attack."
-    },
-    {
-        "name": "Zombie Bloons",
-        "type": "attack",
-        "dmg": {
-            "base": 150,
-            "bonusBoss": 150
-        },
-        "pierce": 50,
-        "rate": null,
-        "lifespan": 7,
-        "range": 80,
-        "special": "Spawned when Bloons are popped within 80 range. Consumes 250 Mana per Zombie Bloon."
     }
     ]
 }
