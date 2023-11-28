@@ -64,7 +64,7 @@
                     "frequency": "After a MOAB Press projectile expires",
                     "dmg": {
                         "base": 2500,
-                        "bonusBoss": 5000
+                        "bonusBoss": 4000
                     },
                     "pierce": 10,
                     "projectiles": 1,
