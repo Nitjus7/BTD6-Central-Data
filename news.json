@@ -1,5 +1,22 @@
 {
   "body": [
+     {
+      "title": "Website v0.7.0: ALL PARAGON STATS",
+      "description": "Every Paragon is here in BTD6 Central 0.7.0 which has finally released. In the Paragon stats page, get all the details you could ever want to know about a Paragon at any Degree, and calculate a degree within a Paragon's menu. Along with this, several other visual changes have been made, including a brand new main font. Full details can be found in the BTD6 Central Discord Server linked below.",
+      "imageSrc": "https://static.wikia.nocookie.net/b__/images/c/cd/ParagonIcon.png/revision/latest?cb=20230322222343&path-prefix=bloons",
+      "links": [
+            {
+              "link": "https://nitjus7.github.io/BTD6-Central/towers.html",
+              "name": "Paragon Stats"
+            },
+            {
+              "link": "https://discord.com/invite/xNxjqXBp6B",
+              "name": "Join the BTD6 Central Discord Server"
+            }
+      ],
+      "dateInMilliseconds": 1701141132744,
+      "big": true
+    },
     {
       "title": "Website v0.6.1",
       "description": "Minor fixes to various places, including a fix to an issue occuring with lots of decimal places. Full notes can be found in the Discord server.",
@@ -23,19 +40,6 @@
             }
           ],
       "dateInMilliseconds": 1698033757452,
-      "big": true
-    },
-    {
-      "title": "BTD6 Update 39.0: MAP EDITOR",
-      "description": "This gigantic update not only features an extensive Map Editor, but makes a massive rework to all Paragons, adds an Etienne skin, and makes a massive amount of balance changes. Check them out in the notes linked below.",
-      "imageSrc": "https://cdn.discordapp.com/attachments/1161451635365642340/1161454117613473853/image0.jpg?ex=654195f0&is=652f20f0&hm=a56d92446c0c0ff0cd47a68824eadacda641b3954176d8861e8db1c473c0a001&",
-      "links": [
-        {
-          "link": "https://www.reddit.com/r/btd6/s/TmT14SIdk1",
-          "name": "BTD6 Update 39.0 Patch Notes"
-        }
-      ],
-      "dateInMilliseconds": 1696899600000,
       "big": true
     },
     {
@@ -92,23 +96,6 @@
       ],
       "dateInMilliseconds": 1695598020000,
       "big": true
-    },
-    {
-      "title": "Bloons Card Storm is in Development!",
-      "description": "Bloons Card Storm is a turn-based card strategy game based around Heroes, Bloons, Monkeys, and Powers. Its planned release date is mid-2024, with a beta starting earlier in the year. Check out more details below.",
-      "imageSrc": "https://preview.redd.it/a7m7zzoeuapb1.png?width=2048&format=png&auto=webp&s=3acd4771d5d77072c76a4d82db6320fb0ebe1326",
-      "links": [
-        {
-          "link": "https://www.reddit.com/r/bloonscardstorm/comments/16n6b53/game_announcement_bloons_card_storm/",
-          "name": "Check out the official announcement"
-        },
-        {
-          "link": "https://www.reddit.com/r/bloonscardstorm/",
-          "name": "Join the new Bloons Card Storm subreddit"
-        }
-      ],
-      "dateInMilliseconds": 1695167580000,
-      "big": false
     },
     {
       "title": "BTD6 Central is in Beta! Version 0.4.0",
