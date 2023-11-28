@@ -1,0 +1,152 @@
+{
+    "tower": "wiz",
+    "name": "Magus Perfectus",
+    "img": null,
+    "cost": 750000,
+    "abilities": [
+    {
+        "name": "Phoenix Explosion",
+        "type": "activated ability",
+        "cooldown": 40,
+        "description": "Applies a burn status to everything on screen and disables Dark Phoenix for 10 seconds. Spawns 1 Zombie ZOMG per 9000 Mana (max 10).",
+        "emits": [
+            {
+                "name": "Explosion Burn",
+                "type": "projectile",
+                "dmg": {
+                    "base": 2500
+                },
+                "pierce": null,
+                "tickRate": 0.5,
+                "duration": 30
+            },
+            {
+                "name": "Zombie ZOMG",
+                "type": "projectile",
+                "dmg": {
+                    "base": 4000,
+                    "bonusBoss": 8000
+                },
+                "pierce": 200,
+                "lifespan": 10,
+                "special": "Travels backwards along the track(s). After 10s, it turns into 4 Zombie BFBs.",
+                "emits": [
+                    {
+                        "name": "Zombie BFB",
+                        "type": "projectile",
+                        "dmg": {
+                            "base": 700
+                        },
+                        "pierce": 50,
+                        "lifespan": 999,
+                        "lifespanRounds": 1
+                    }
+                ]
+            }
+        ],
+        "special": "Consumes ALL Mana when used and spawns 1 extra Zombie ZOMG per 9000 Mana."
+    },
+    {
+        "name": "Arcane Metamorphosis",
+        "type": "activated ability",
+        "cooldown": 120,
+        "description": "Disables Dark Phoenix and all other base attacks and replaces them with a Flamethrower.",
+        "emits": [
+            {
+                "name": "Flamethrower",
+                "type": "attack",
+                "dmg": {
+                    "base": 500,
+                    "bonusBoss": 1000
+                },
+                "pierce": 100,
+                "projectiles": 2,
+                "rate": 0.5,
+                "duration": 30,
+                "emits": [
+                    {
+                        "name": "Wall of Fire",
+                        "type": "projectile",
+                        "frequency": "Emitted sometimes when Flamethrower damages Bloons. Specifics are unknown.",
+                        "dmg": {
+                            "base": 25
+                        },
+                        "pierce": 60,
+                        "rate": 0.1,
+                        "lifespan": 9
+                    }
+                ]
+            }
+        ],
+        "special": "Consumes 5000 Mana per second. Ability stops when all Mana has been consumed."
+    }
+    ],
+    "attacks": [
+    {
+        "name": "Drain Beam",
+        "type": "attack",
+        "dmg": {
+            "base": 200
+        },
+        "pierce": null,
+        "rate": 0.05,
+        "range": 120,
+        "special": "Generates +250 Mana per hit. Can only target one Bloon. When toggled on, all other attacks are disabled."
+    },
+    {
+        "name": "Arcane Blast",
+        "type": "attack",
+        "dmg": {
+            "base": 50,
+            "bonusMOAB": 250,
+            "bonusBoss": 150
+        },
+        "pierce": 25,
+        "rate": 0.275,
+        "range": 80,
+        "special": "Consumes 50 Mana per attack."
+    },
+    {
+        "name": "Dark Phoenix",
+        "type": "subtower",
+        "emits": [
+            {
+                "name": "Dark Flame",
+                "type": "attack",
+                "dmg": {
+                    "base": 200,
+                    "bonusBoss": 50
+                },
+                "pierce": 100,
+                "rate": 0.2,
+                "special": "Consumes 50 Mana per attack."
+            },
+            {
+                "name": "Dark Fireballs",
+                "type": "attack",
+                "dmg": {
+                    "base": 400,
+                    "bonusBoss": 400
+                },
+                "pierce": 100,
+                "rate": 2,
+                "projectiles": 8,
+                "special": "Consumes 50 Mana per attack."
+            }
+        ]
+    },
+    {
+        "name": "Zombie Bloons",
+        "type": "attack",
+        "dmg": {
+            "base": 150,
+            "bonusBoss": 150
+        },
+        "pierce": 50,
+        "rate": null,
+        "lifespan": 7,
+        "range": 80,
+        "special": "Spawned when Bloons are popped within 80 range. Consumes 250 Mana per Zombie Bloon."
+    }
+    ]
+}
