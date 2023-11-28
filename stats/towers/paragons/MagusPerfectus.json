@@ -63,6 +63,7 @@
                 "projectiles": 2,
                 "rate": 0.5,
                 "duration": 30,
+                "range": 80,
                 "emits": [
                     {
                         "name": "Wall of Fire",
@@ -107,33 +108,27 @@
         "special": "Consumes 50 Mana per attack."
     },
     {
-        "name": "Dark Phoenix",
-        "type": "subtower",
-        "emits": [
-            {
-                "name": "Dark Flame",
-                "type": "attack",
-                "dmg": {
-                    "base": 200,
-                    "bonusBoss": 50
-                },
-                "pierce": 100,
-                "rate": 0.2,
-                "special": "Consumes 50 Mana per attack."
-            },
-            {
-                "name": "Dark Fireballs",
-                "type": "attack",
-                "dmg": {
-                    "base": 400,
-                    "bonusBoss": 400
-                },
-                "pierce": 100,
-                "rate": 2,
-                "projectiles": 8,
-                "special": "Consumes 50 Mana per attack."
-            }
-        ]
+        "name": "Dark Phoenix Flame",
+        "type": "attack",
+        "dmg": {
+            "base": 200,
+            "bonusBoss": 50
+        },
+        "pierce": 100,
+        "rate": 0.2,
+        "special": "Consumes 50 Mana per attack."
+    },
+    {
+        "name": "Dark Phoenix Fireballs",
+        "type": "attack",
+        "dmg": {
+            "base": 400,
+            "bonusBoss": 400
+        },
+        "pierce": 100,
+        "rate": 2,
+        "projectiles": 8,
+        "special": "Consumes 50 Mana per attack."
     },
     {
         "name": "Zombie Bloons",
