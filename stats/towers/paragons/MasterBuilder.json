@@ -93,7 +93,7 @@
     {
         "name": "Mega Sentry Expire Explosion",
         "type": "projectile",
-        "frequency": "When a Mega Sentry is sold or replaced",
+        "special": "Occurs when any Mega Sentry is sold or replaced.",
         "dmg": {
             "base": 30000,
             "bonusBoss": 40000
@@ -104,7 +104,6 @@
     {
         "name": "Modified Paragon Sentry",
         "type": "subtower",
-        "rate": 6,
         "special": "Deployed by every Mega Sentry.",
         "emits": [
             {
