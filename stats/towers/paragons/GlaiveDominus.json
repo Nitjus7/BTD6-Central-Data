@@ -17,7 +17,6 @@
             "pierce": 100,
             "rate": 0.04,
             "range": 60,
-            "projectiles": 1,
             "special": "Ricochets after hitting a Bloon.",
             "emits": [
                 {
@@ -42,8 +41,7 @@
             },
             "range": 50,
             "pierce": 1000,
-            "rate": 0.1,
-            "projectiles": 1
+            "rate": 0.1
         },
         {
             "name": "MOAB Press",
