@@ -22,12 +22,11 @@
             "emits": [
                 {
                     "name": "Shred",
-                    "type": "attack",
+                    "type": "projectile",
                     "frequency": "The first Bloon hit by a Glaive.",
                     "dmg": {
                         "base": 750
                     },
-                    "pierce": null,
                     "tickRate": 1,
                     "duration": 15
                 }
@@ -56,7 +55,6 @@
             "pierce": 100,
             "rate": 3,
             "range": 100,
-            "projectiles": 1,
             "emits": [
                 {
                     "name": "MOAB Press Explosion",
@@ -67,7 +65,6 @@
                         "bonusBoss": 4000
                     },
                     "pierce": 10,
-                    "projectiles": 1,
                     "emits": [
                         {
                             "name": "MOAB Press Burn",
@@ -76,7 +73,6 @@
                             "dmg": {
                                 "base": 500
                             },
-                            "pierce": null,
                             "tickRate": 1,
                             "duration": 4
                         }
