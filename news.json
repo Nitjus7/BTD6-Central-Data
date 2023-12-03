@@ -1,9 +1,22 @@
 {
   "body": [
+    {
+      "title": "Website v0.7.1",
+      "description": "Very, very, very many visual changes including: back button hover effect changed, back button now hides itself when you scroll down but reappears when you scroll up, paragon stats UI improvements, and Custom Map stats UI improvements. Full details can be found in the Discord server linked under Resources.",
+      "imageSrc": null,
+      "links": [
+            {
+              "link": "https://nitjus7.github.io/BTD6-Central/towers.html",
+              "name": "Paragon Stats"
+            }
+      ],
+      "dateInMilliseconds": 1701578384369,
+      "big": false
+    },
      {
       "title": "Website v0.7.0: ALL PARAGON STATS",
       "description": "Every Paragon is here in BTD6 Central 0.7.0 which has finally released. In the Paragon stats page, get all the details you could ever want to know about a Paragon at any Degree, and calculate a degree within a Paragon's menu. Along with this, several other visual changes have been made, including a brand new main font. Full details can be found in the BTD6 Central Discord Server linked below.",
-      "imageSrc": "https://static.wikia.nocookie.net/b__/images/c/cd/ParagonIcon.png/revision/latest?cb=20230322222343&path-prefix=bloons",
+      "imageSrc": null,
       "links": [
             {
               "link": "https://nitjus7.github.io/BTD6-Central/towers.html",
