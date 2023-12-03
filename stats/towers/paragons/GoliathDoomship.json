@@ -18,7 +18,6 @@
                     "bonusBoss": 20000
                 },
                 "pierce": 50,
-                "rate": 0,
                 "emits": [
                     {
                         "name": "Carpet Bomb Stun",
@@ -74,8 +73,7 @@
                     "base": 200,
                     "bonusBoss": 400
                 },
-                "pierce": 50,
-                "rate": 0
+                "pierce": 50
             }
         ]
     }
