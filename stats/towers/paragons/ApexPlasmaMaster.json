@@ -22,7 +22,7 @@
                 "frequency": "Once at half pierce remaining and another time when destroyed.",
                 "dmg": {
                     "base": 15,
-                    "bonusCeram": 75,
+                    "bonusCeram": 90,
                     "bonusBoss": 80
                 }, 
                 "pierce": 200,
