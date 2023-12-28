@@ -5,35 +5,35 @@
       "health": 50000,
       "speed": 0.05,
       "passive": "10 Pink Bloons",
-      "skullSpawns": "60 Ceramic Bloons"
+      "skullSpawns": "60 Ceramic Bloons, 40 Pink Bloons"
     },
     {
       "tier": 2,
       "health": 300000,
       "speed": 0.05,
       "passive": "10 Rainbow Bloons",
-      "skullSpawns": "16 BFBs"
+      "skullSpawns": "16 BFBs, 40 Rainbow Bloons"
     },
     {
       "tier": 3,
       "health": 2000000,
       "speed": 0.05,
       "passive": "13 Ceramic Bloons",
-      "skullSpawns": "1 BAD, 9 DDTs"
+      "skullSpawns": "1 BAD, 9 DDTs, 50 Ceramic Bloons"
     },
     {
       "tier": 4,
       "health": 8000000,
       "speed": 0.06,
       "passive": "12 MOABs",
-      "skullSpawns": "2 fortified BADs, 20 fortified DDTs"
+      "skullSpawns": "2 fortified BADs, 20 fortified DDTs, 100 Regrow Fortified Ceramic Bloons"
     },
     {
       "tier": 5,
       "health": 40000000,
       "speed": 0.06,
       "passive": "8 DDTs",
-      "skullSpawns": "4 fortified BADs"
+      "skullSpawns": "4 fortified BADs, 30 MOABs"
     }
   ],
   "lych": [
