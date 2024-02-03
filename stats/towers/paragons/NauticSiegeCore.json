@@ -1,1 +1,33 @@
-{}
+{
+        "tower": "dart",
+        "name": "Nautic Siege Core",
+        "img": null,
+        "cost": 400000,
+        "attacks": [{
+            "name": "Seeking Dart",
+            "type": "attack",
+            "dmg": {
+                "base": 15,
+                "bonusCeram": 75,
+                "bonusBoss": 80
+            },
+            "pierce": 200,
+            "rate": 0.4,
+            "projectiles": 3,
+            "special": "Ricochets off of walls. Can rehit bloons.",
+            "emits": [
+                {
+                "type": "projectile",
+                "name": "Airburst",
+                "dmg": {
+                    "base": 15,
+                    "bonusCeram": 90,
+                    "bonusBoss": 80
+                }, 
+                "pierce": 200,
+                "projectiles": 2,
+                "special": "Ricochets off of walls. Can rehit bloons."
+            }
+            ]
+        }]
+    }
