@@ -23,7 +23,9 @@
                         "name": "Carpet Bomb Stun",
                         "type": "status",
                         "frequency": "Applies if an affected Bloon does not pop.",
-                        "duration": 8
+                        "duration": {
+                            "base": 8
+                        }
                     }
                 ]
             }
