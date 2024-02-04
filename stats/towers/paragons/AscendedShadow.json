@@ -55,7 +55,7 @@
                     "type": "status",
                     "frequency": "After a Flash Bomb explodes",
                     "duration": {
-                        "bloons": 3,
+                        "base": 3,
                         "blimps": 1
                     }
                 }
