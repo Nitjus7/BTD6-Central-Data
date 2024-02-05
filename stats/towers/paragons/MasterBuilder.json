@@ -105,6 +105,7 @@
         "name": "Modified Paragon Sentry",
         "type": "subtower",
         "rate": 6,
+        "lifespan": 19,
         "special": "Deployed by every Mega Sentry.",
         "emits": [
             {
@@ -116,7 +117,6 @@
                 },
                 "pierce": 5,
                 "rate": 0.06,
-                "lifespan": 19,
                 "range": 50
             },
             {
