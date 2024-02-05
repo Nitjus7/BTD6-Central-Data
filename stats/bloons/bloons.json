@@ -148,7 +148,7 @@
           "rbe": 816,
           "speed": 2.64,
           "spawns": "4x Camo Regrow Ceramic",
-          "immuneTo": "Explosive and sharp projectiles. Also has camo which can be removed."
+          "immuneTo": "Explosive and sharp projectiles. Also has removable Camo."
       },
       {
           "name": "BAD",
