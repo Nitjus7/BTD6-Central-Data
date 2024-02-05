@@ -72,9 +72,8 @@
                                 "base": 500
                             },
                             "tickRate": 1,
-                            "duration": {
-                                "base": 4
-                            }
+                            "duration": 4
+                            
                         }
                     ]
                 },
