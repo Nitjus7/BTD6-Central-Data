@@ -97,7 +97,7 @@
         "emits": [
             {
                 "name": "Explosion",
-                "type": "AoE",
+                "type": "area of effect",
                 "frequency": "On each Pre-Emptive Strike",
                 "dmg": {
                     "base": 350
@@ -108,7 +108,7 @@
     },
     {
         "name": "Submerged: Reactor",
-        "type": "AoE",
+        "type": "attack",
         "dmg": {
             "base": 50,
             "bonusCeram": 50
