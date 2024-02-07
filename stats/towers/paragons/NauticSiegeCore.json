@@ -1,33 +1,136 @@
 {
-        "tower": "dart",
-        "name": "Nautic Siege Core",
-        "img": null,
-        "cost": 400000,
-        "attacks": [{
-            "name": "Seeking Dart",
-            "type": "attack",
-            "dmg": {
-                "base": 15,
-                "bonusCeram": 75,
-                "bonusBoss": 80
-            },
-            "pierce": 200,
-            "rate": 0.4,
-            "projectiles": 3,
-            "special": "Ricochets off of walls. Can rehit bloons.",
-            "emits": [
-                {
+    "tower": "sub",
+    "name": "Nautic Siege Core",
+    "img": null,
+    "cost": 400000,
+    "abilities": [
+    {
+        "name": "Final Strike",
+        "type": "activated ability",
+        "cooldown": 240,
+        "description": "Disables the Sub for 15 seconds. Then, it launches 3 massive missiles targeting first, close, and strong.",
+        "emits": [
+            {
+                "name": "Final Strike Missile",
                 "type": "projectile",
-                "name": "Airburst",
                 "dmg": {
-                    "base": 15,
-                    "bonusCeram": 90,
-                    "bonusBoss": 80
-                }, 
-                "pierce": 200,
-                "projectiles": 2,
-                "special": "Ricochets off of walls. Can rehit bloons."
+                    "base": 30000,
+                    "bonusBoss": 30000
+                },
+                "pierce": 30,
+                "projectiles": 3,
+                "emits": [
+                    {
+                        "name": "Missile Aftershock",
+                        "type": "projectile",
+                        "dmg": {
+                            "base": 10000,
+                            "bonusBoss": 5000
+                        },
+                        "pierce": 120,
+                        "emits": [
+                            {
+                                "name": "Aftershock Stun",
+                                "type": "status",
+                                "frequency": "Applies if an affected Bloon does not pop.",
+                                "duration": {
+                                    "base": 15
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Missile Fallout",
+                        "type": "track item",
+                        "frequency": "5 per Final Strike Missile.",
+                        "dmg": {
+                            "base": 10,
+                            "bonusMOAB": 40,
+                            "bonusBoss": 50
+                        },
+                        "pierce": 60,
+                        "lifespan": 36,
+                        "tickRate": 0.1
+                    }
+                ]
             }
-            ]
-        }]
+        ]
     }
+    ],
+    "attacks": [
+    {
+        "name": "Unsubmerged: Seeking Dart",
+        "type": "attack",
+        "dmg": {
+            "base": 40,
+            "bonusMOAB": 160,
+            "bonusBoss": 300
+        },
+        "pierce": null,
+        "rate": 0.15,
+        "emits": [
+            {
+                "name": "Airburst",
+                "type": "projectile",
+                "frequency": "When a Seeking Dart hits a target or expires.",
+                "dmg": {
+                    "base": 40,
+                    "bonusMOAB": 80,
+                    "bonusBoss": 180
+                },
+                "projectiles": 3,
+                "pierce": 9
+            }
+        ],
+        "special": "Attacks in other Towers' range."
+    },
+    {
+        "name": "Unsubmerged: Pre-Emptive Strike",
+        "type": "projectile",
+        "dmg": {
+            "base": 1000,
+            "bonusCeram": 1000,
+            "bonusBoss": 20000
+        },
+        "pierce": null,
+        "special": "Fires automatically every time a Bloon first spawns.",
+        "emits": [
+            {
+                "name": "Explosion",
+                "type": "AoE",
+                "frequency": "On each Pre-Emptive Strike",
+                "dmg": {
+                    "base": 350
+                },
+                "pierce": 10
+            }
+        ]
+    },
+    {
+        "name": "Submerged: Reactor",
+        "type": "AoE",
+        "dmg": {
+            "base": 50,
+            "bonusCeram": 50
+        },
+        "pierce": 1000,
+        "tickRate": 0.5,
+        "range": 52
+    }
+    ],
+    "support":
+    [
+        {
+            "name": "Submerged: Hero Buff",
+            "description": "Heroes in range get 5x damage, 3x pierce, and 5x Hero XP, but attack 50% slower."
+        },
+        {
+            "name": "Submerged: Monkey Sub Buff",
+            "description": "Other Monkey Subs in range get 7x damage and 3x pierce. Does not affect the First Strike ability."
+        },
+        {
+            "name": "Submerged: Ability Cooldown Buff",
+            "description": "Ability cooldowns reduced by 20% globally. Water towers in range get a 50% cooldown reduction instead. Paragons in range get a 10% cooldown reduction."
+        }
+    ]
+}
