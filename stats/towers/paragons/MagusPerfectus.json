@@ -87,7 +87,7 @@
         "name": "Drain Beam",
         "type": "attack",
         "dmg": {
-            "base": 200
+            "base": 100
         },
         "pierce": null,
         "rate": 0.05,
@@ -95,11 +95,11 @@
         "special": "Generates +250 Mana per hit. Can only target one Bloon. When toggled on, all other attacks are disabled."
     },
     {
-        "name": "Arcane Blast",
+        "name": "Arcane Spike",
         "type": "attack",
         "dmg": {
-            "base": 50,
-            "bonusMOAB": 250,
+            "base": 100,
+            "bonusMOAB": 300,
             "bonusBoss": 150
         },
         "pierce": 25,
