@@ -82,7 +82,7 @@
                 "pierce": 9
             }
         ],
-        "special": "Attacks in other Towers' range."
+        "special": "Can attack Bloons in other Towers' range."
     },
     {
         "name": "Unsubmerged: Pre-Emptive Strike",
