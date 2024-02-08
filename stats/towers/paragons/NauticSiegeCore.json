@@ -41,7 +41,7 @@
                     },
                     {
                         "name": "Missile Fallout",
-                        "type": "track item",
+                        "type": "projectile",
                         "frequency": "5 per Final Strike Missile.",
                         "dmg": {
                             "base": 10,
