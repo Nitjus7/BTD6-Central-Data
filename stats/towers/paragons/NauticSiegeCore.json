@@ -97,7 +97,7 @@
         "emits": [
             {
                 "name": "Explosion",
-                "type": "area of effect",
+                "type": "projectile",
                 "frequency": "On each Pre-Emptive Strike",
                 "dmg": {
                     "base": 350
