@@ -14,8 +14,8 @@
                 "name": "Final Strike Missile",
                 "type": "projectile",
                 "dmg": {
-                    "base": 30000,
-                    "bonusBoss": 30000
+                    "base": 50000,
+                    "bonusBoss": 10000
                 },
                 "pierce": 30,
                 "projectiles": 3,
@@ -45,8 +45,8 @@
                         "frequency": "5 per Final Strike Missile.",
                         "dmg": {
                             "base": 10,
-                            "bonusMOAB": 40,
-                            "bonusBoss": 50
+                            "bonusMOAB": 60,
+                            "bonusBoss": 30
                         },
                         "pierce": 60,
                         "lifespan": 36,
