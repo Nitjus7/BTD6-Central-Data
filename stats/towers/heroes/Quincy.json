@@ -7,9 +7,7 @@
     "baseProjectiles": {
         "arrow": {
             "displayName": "Bouncing Arrow",
-            "damage": {
-                "base": 1
-            },
+            "dmgBase": 1,
             "pierce": 3,
             "attackRate": 0.95,
             "damageType": "sharp",
@@ -18,9 +16,7 @@
         },
         "explosion": {
             "displayName": "Arrow Explosion",
-            "damage": {
-                "base": 1
-            },
+            "dmgBase": 1,
             "pierce": 10,
             "damageType": "explosion",
             "frequency": "Every 3rd shot",
@@ -28,10 +24,8 @@
         },
         "storm-arrow": {
             "displayName": "Storm Arrow",
-            "damage": {
-                "base": 6,
-                "bonusMOAB": 6
-            },
+            "dmgBase": 6,
+            "dmgBonusMOAB": 6,
             "pierce": null,
             "attackRate": 0.05,
             "range": 100,
@@ -104,17 +98,15 @@
         },
         {
             "level": 8,
-            "editItems": [
+            "addProperties": [
                 {
                     "target": "arrow",
-                    "item": "damage",
-                    "addItem": "bonusMOAB",
+                    "key": "dmgBonusMOAB",
                     "value": 2
                 },
                 {
                     "target": "explosion",
-                    "item": "damage",
-                    "addItem": "bonusMOAB",
+                    "key": "dmgBonusMOAB",
                     "value": 2
                 }
             ]
@@ -178,8 +170,8 @@
                 {
                     "target": "rapid-shot",
                     "item": "cooldown",
-                    "type": "replace",
-                    "value": 45
+                    "type": "subtract",
+                    "value": 15
                 },
                 {
                     "target": "rapid-shot",
@@ -195,8 +187,8 @@
                 {
                     "target": "arrow",
                     "item": "attackRate",
-                    "type": "multiply",
-                    "value": 0.6667
+                    "type": "divde",
+                    "value": 1.5
                 }
             ]
         },
@@ -224,8 +216,8 @@
                 {
                     "target": "storm-of-arrows",
                     "item": "cooldown",
-                    "type": "replace",
-                    "value": 56
+                    "type": "subtract",
+                    "value": 14
                 },
                 {
                     "target": "storm-arrow",
