@@ -4,7 +4,7 @@
     "xpCurve": 1,
     "footprintRadius": 7,
     "range": 50,
-    "baseProjectiles": {
+    "projectiles": {
         "arrow": {
             "displayName": "Bouncing Arrow",
             "dmgBase": 1,
@@ -34,7 +34,7 @@
             "special": "Each arrow attacks a Bloon 3 times with a 5% chance of hitting the target."
         }
     },
-    "baseAbilities": {
+    "abilities": {
         "rapid-shot": {
             "displayName": "Rapid Shot",
             "cooldown": 60,
