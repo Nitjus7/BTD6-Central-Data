@@ -187,7 +187,7 @@
                 {
                     "target": "arrow",
                     "item": "attackRate",
-                    "type": "divde",
+                    "type": "divide",
                     "value": 1.5
                 }
             ]
