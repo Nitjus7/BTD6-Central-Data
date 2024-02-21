@@ -157,8 +157,7 @@
             "editItems": [
                 {
                     "target": "arrow",
-                    "item": "damage",
-                    "subItem": "bonusMOAB",
+                    "item": "dmgBonusMOAB",
                     "type": "add",
                     "value": 1
                 }
