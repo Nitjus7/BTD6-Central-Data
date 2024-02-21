@@ -160,6 +160,12 @@
                     "item": "dmgBonusMOAB",
                     "type": "add",
                     "value": 1
+                },
+                {
+                    "target": "explosion",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 1
                 }
             ]
         },
