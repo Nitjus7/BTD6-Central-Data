@@ -255,15 +255,13 @@
                 },
                 {
                     "target": "storm-arrow",
-                    "item": "damage",
-                    "subItem": "base",
+                    "item": "dmgBase",
                     "type": "add",
                     "value": 4
                 },
                 {
                     "target": "storm-arrow",
-                    "item": "damage",
-                    "subItem": "bonusMOAB",
+                    "item": "dmgBonusMOAB",
                     "type": "add",
                     "value": 8
                 },
