@@ -1,0 +1,279 @@
+{
+    "hero": "Striker Jones",
+    "cost": 700,
+    "xpCurve": 1,
+    "footprintRadius": 7,
+    "range": 55,
+    "projectiles": {
+        "bomb": {
+            "displayName": "Bomb",
+            "dmgBase": 1,
+            "pierce": 10,
+            "attackRate": 1.2,
+            "damageType": "explosive",
+            "camo": false
+        },
+        "shell": {
+            "displayName": "Stunning Shell",
+            "dmgBase": 2,
+            "pierce": 48,
+            "attackRate": null,
+            "damageType": "normal",
+            "camo": false,
+            "emissions": ["shell-stun"]
+        }
+    },
+    "statuses": {
+        "shell-stun": {
+            "displayName": "Shell Stun",
+            "duration": 1
+        }
+    },
+    "abilities": {
+        "concussive-shell": {
+            "displayName": "Concussive Shell",
+            "cooldown": 16,
+            "description": "Launches a Shell at the strongest target on screen, doing damage to and stunning nearby Bloons.",
+            "emissions": ["shell"]
+        },
+        "target-focus": {
+            "displayName": "Target Focus",
+            "cooldown": 30,
+            "duration": 15,
+            "description": "All mortars retarget to mouse/touch location and have 30% increased accuracy."
+        },
+        "artillery-command": {
+            "displayName": "Artillery Command",
+            "cooldown": 80,
+            "description": "Instantly resets the ability cooldowns of all Bomb Shooters and Mortars on screen."
+        }
+    },
+    "support": {
+        "explosives-buff": {
+            "displayName": "Explosives Buff",
+            "target": "All Bomb Shooters and Mortars on screen.",
+            "buff": "90% attack rate"
+        },
+        "black-debuff": {
+            "displayName": "Black Bloon Debuff",
+            "description": "All Black Bloons have a 50% chance of being damaged by any explosive type attack."
+        },
+        "mortar-buff": {
+            "displayName": "Mortar Buff",
+            "target": "All Mortars on screen.",
+            "buff": "+10% blast radius"
+        },
+        "pierce-buff": {
+            "displayName": "Pierce Buff",
+            "target": "All Towers in range.",
+            "buff": "+25% pierce, +5% range"
+        },
+        "artillery-command-buff": {
+            "displayName": "Artillery Command Buff",
+            "target": "All Bomb Shooters and Mortars on screen.",
+            "buff": "+100% damage, +100% pierce"
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttack": "bomb"
+        },
+        {
+            "level": 2,
+            "description": "Bomb gets increased blast radius."
+        },
+        {
+            "level": 3,
+            "addAbility": "concussive-shell"
+        },
+        {
+            "level": 4,
+            "addSupports": ["explosives-buff"]
+        },
+        {
+            "level": 5,
+            "addSupports": ["black-debuff"]
+        },
+        {
+            "level": 6,
+            "editItems": [
+                {
+                    "target": "bomb",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 10
+                }
+            ],
+            "description": "Bomb gets increased blast radius."
+        },
+        {
+            "level": 7,
+            "addAbility": "target-focus",
+            "addSupports": ["mortar-buff"]
+        },
+        {
+            "level": 8,
+            "addSupports": ["pierce-buff"]
+        },
+        {
+            "level": 9,
+            "editItems": [
+                {
+                    "target": "bomb",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.75
+                },
+                {
+                    "target": "shell",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 10
+                },
+                {
+                    "target": "shell",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 10
+                },
+                {
+                    "target": "shell-stun",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 4
+                }
+            ],
+            "addProperties": [{
+                "target": "shell-stun",
+                "key": "durationBlimp",
+                "value": 3
+            }]
+        },
+        {
+            "level": 10,
+            "addAbility": "artillery-command"
+        },
+        {
+            "level": 11,
+            "editItems": [
+                {
+                    "target": "bomb",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.7222
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "addRange": 3,
+            "editItems": [
+                {
+                    "target": "bomb",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [
+                {
+                    "target": "bomb",
+                    "item": "attackRate",
+                    "type": "divide",
+                    "value": 1.3
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "editItems": [
+                {
+                    "target": "shell-stun",
+                    "item": "duration",
+                    "type": "multiply",
+                    "value": 1.5
+                },
+                {
+                    "target": "shell-stun",
+                    "item": "durationBlimp",
+                    "type": "multiply",
+                    "value": 1.5
+                }
+            ],
+            "description": "Shell gets increased blast radius."
+        },
+        {
+            "level": 15,
+            "editItems": [
+                {
+                    "target": "concussive-shell",
+                    "item": "cooldown",
+                    "type": "subtract",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "editItems": [
+                {
+                    "target": "bomb",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.7
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "addRange": 2,
+            "editItems": [
+                {
+                    "target": "bomb",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "explosives-buff",
+                    "item": "buff",
+                    "type": "replace",
+                    "value": "81% attack rate"
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editItems": [
+                {
+                    "target": "bomb",
+                    "item": "attackRate",
+                    "type": "divide",
+                    "value": 1.75
+                },
+                {
+                    "target": "black-debuff",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "All Black Bloons can be damaged by explosives."
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "addEmissions": [{
+                "target": "artillery-command",
+                "emissionName": "artillery-command-buff"
+            }]
+        }
+    ]
+}
