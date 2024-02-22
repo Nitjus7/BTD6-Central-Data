@@ -1,0 +1,451 @@
+{
+    "hero": "Gwendolin",
+    "cost": 725,
+    "xpCurve": 1,
+    "footprintRadius": 7,
+    "range": 38,
+    "projectiles": {
+        "flamethrower": {
+            "displayName": "Flamethrower",
+            "dmgBase": 1,
+            "pierce": 2,
+            "attackRate": 0.5,
+            "damageType": "fire",
+            "camo": false
+        },
+        "fire-wall": {
+            "displayName": "Fire Wall",
+            "dmgBase": 1,
+            "pierce": 20,
+            "attackRate": 0.1,
+            "damageType": "fire",
+            "camo": true
+        },
+        "heatwave": {
+            "displayName": "Heatwave",
+            "dmgBase": 3,
+            "range": 38,
+            "pierce": null,
+            "attackRate": null,
+            "damageType": "fire",
+            "camo": false,
+            "special": "Fires after every 40 shots. Cannot fire more than once per 4.5sec.",
+            "emissions": ["heat-it-up-buff"]
+        }
+    },
+    "statuses": {
+        "flamethrower-burn": {
+            "displayName": "Flamethrower Burn",
+            "dmgBase": 1,
+            "tickRate": 1.5,
+            "duration": 3,
+            "damageType": "fire",
+            "camo": false
+        },
+        "firestorm-burn": {
+            "displayName": "Firestorm Burn",
+            "dmgBase": 1,
+            "dmgBonusMOAB": 14,
+            "tickRate": 1,
+            "duration": 8,
+            "damageType": "fire",
+            "camo": false,
+            "special": "Ticks twice as fast on Bloons."
+        },
+        "fire-wall-burn": {
+            "displayName": "Fire Wall Burn"
+        }
+    },
+    "abilities": {
+        "cocktail-of-fire": {
+            "displayName": "Cocktail of Fire",
+            "cooldown": 30,
+            "duration": 12,
+            "description": "Drops a Fire Wall at the targeted location on the track."
+        },
+        "firestorm": {
+            "displayName": "Firestorm",
+            "cooldown": 60,
+            "duration": 3,
+            "dmgBase": 5,
+            "dmgBonusMOAB": 15,
+            "pierce": null,
+            "damageType": "fire",
+            "description": "Instantly damages all Bloons on screen and applies a burn effect to all Bloons it damages. Gives a Heat it Up Buff to all Towers on screen.",
+            "emissions": ["firestorm-burn", "heat-it-up-buff"]
+        }
+    },
+    "support": {
+        "pyrotechnics-buff": {
+            "displayName": "Pyrotechnics Buff",
+            "target": "4+xx Tack Shooters, x3+x Wizards, and xx3+ Mortars on screen",
+            "buff": "90% attack rate and +10% projectile radius"
+        },
+        "heat-it-up-buff": {
+            "displayName": "Heat it Up Buff",
+            "target": "All Towers within Gwendolin's range.",
+            "buff": "+1 pierce and lead popping",
+            "duration": 8
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttack": "flamethrower"
+        },
+        {
+            "level": 2,
+            "editItems": [{
+                "target": "flamethrower",
+                "item": "pierce",
+                "type": "add",
+                "value": 1
+            }]
+        },
+        {
+            "level": 3,
+            "addAbility": "cocktail-of-fire"
+        },
+        {
+            "level": 4,
+            "addEmissions": [
+                {
+                    "target": "flamethrower",
+                    "emissionName": "heatwave"
+                }
+            ]
+        },
+        {
+            "level": 5,
+            "editItems": [{
+                "target": "flamethrower",
+                "item": "pierce",
+                "type": "add",
+                "value": 1
+            }],
+            "addSupports": ["pyrotechnics-buff"]
+        },
+        {
+            "level": 6,
+            "addEmissions": [
+                {
+                    "target": "flamethrower",
+                    "emissionName": "flamethrower-burn"
+                }
+            ]
+        },
+        {
+            "level": 7,
+            "editItems": [
+                {
+                    "target": "heatwave",
+                    "item": "range",
+                    "type": "add",
+                    "value": 5
+                },
+                {
+                    "target": "fire-wall",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.5
+                },
+                {
+                    "target": "fire-wall",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "level": 8,
+            "addProperties": [{
+                "target": "flamethrower",
+                "key": "projectiles",
+                "value": 2
+            }]
+        },
+        {
+            "level": 9,
+            "editItems": [
+                {
+                    "target": "flamethrower",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "addAbility": "firestorm",
+            "editItems": [{
+                "target": "flamethrower-burn",
+                "item": "dmgBase",
+                "type": "add",
+                "value": 1
+            }]
+        },
+        {
+            "level": 11,
+            "addRange": 3,
+            "editItems": [
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "fire-wall",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "flamethrower",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.8
+                },
+                {
+                    "target": "heatwave",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Fires after every 48 shots. Cannot fire more than once per 4.5sec."
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [
+                {
+                    "target": "flamethrower",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 4
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "addEmissions": [
+                {
+                    "target": "fire-wall",
+                    "emissionName": "fire-wall-burn"
+                }
+            ],
+            "editItems": [
+                {
+                    "target": "fire-wall",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "editItems": [
+                {
+                    "target": "flamethrower",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.75
+                },
+                {
+                    "target": "heatwave",
+                    "item": "sepcial",
+                    "type": "replace",
+                    "value": "Fires after every 64 shots. Cannot fire more than once per 4.5sec."
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "editItems": [
+                {
+                    "target": "flamethrower",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                },
+                {
+                    "target": "fire-wall",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                },
+                {
+                    "target": "heatwave",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                },
+                {
+                    "target": "firestorm-burn",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                },
+                {
+                    "target": "firewall-burn",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                },
+                {
+                    "target": "firestorm",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                },
+                {
+                    "target": "firestorm-burn",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 5
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [
+                {
+                    "target": "heat-it-up-buff",
+                    "item": "buff",
+                    "type": "replace",
+                    "value": "+1 pierce, +1 damage, +2 bonus lead damage, and lead popping"
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "flamethrower",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.5
+                },
+                {
+                    "target": "heatwave",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Fires after every 70 shots. Cannot fire more than once per 4.5sec."
+                },
+                {
+                    "target": "pyrotechnics-buff",
+                    "item": "buff",
+                    "type": "replace",
+                    "value": "90% attack rate and +10% projectile radius"
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editItems": [
+                {
+                    "target": "flamethrower",
+                    "item": "projectiles",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "editItems": [
+                {
+                    "target": "firestorm",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 10
+                },
+                {
+                    "target": "firestorm",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 25
+                },
+                {
+                    "target": "fire-wall",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 3
+                },
+                {
+                    "target": "flamethrower-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        }
+    ]
+}
