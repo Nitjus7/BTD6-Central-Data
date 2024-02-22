@@ -391,7 +391,7 @@
                     "target": "pyrotechnics-buff",
                     "item": "buff",
                     "type": "replace",
-                    "value": "90% attack rate and +10% projectile radius"
+                    "value": "80% attack rate and +20% projectile radius"
                 },
                 {
                     "target": "flamethrower-burn",
