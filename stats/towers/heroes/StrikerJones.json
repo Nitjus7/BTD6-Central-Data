@@ -275,5 +275,9 @@
                 "emissionName": "artillery-command-buff"
             }]
         }
-    ]
+    ],
+    ,
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
 }
