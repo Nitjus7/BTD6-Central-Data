@@ -278,5 +278,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
 }
