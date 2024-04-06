@@ -447,5 +447,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
 }
