@@ -72,7 +72,7 @@
             "emissions": ["firestorm-burn", "heat-it-up-buff"]
         }
     },
-    "support": {
+    "supports": {
         "pyrotechnics-buff": {
             "displayName": "Pyrotechnics Buff",
             "target": "4+xx Tack Shooters, x3+x Wizards, and xx3+ Mortars on screen",
