@@ -109,12 +109,7 @@
         },
         {
             "level": 4,
-            "addEmissions": [
-                {
-                    "target": "flamethrower",
-                    "emissionName": "heatwave"
-                }
-            ]
+            "
         },
         {
             "level": 5,
@@ -128,12 +123,11 @@
         },
         {
             "level": 6,
-            "addEmissions": [
-                {
-                    "target": "flamethrower",
-                    "emissionName": "flamethrower-burn"
-                }
-            ]
+            "addProperties": [{
+                "target": "flamethrower",
+                "key": "emissions",
+                "value": "flamethrower-burn"
+            }]
         },
         {
             "level": 7,
