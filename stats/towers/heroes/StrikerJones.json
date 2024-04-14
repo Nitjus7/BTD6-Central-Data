@@ -76,7 +76,7 @@
     "levels": [
         {
             "level": 1,
-            "addAttack": "bomb"
+            "addAttacks": ["bomb"]
         },
         {
             "level": 2,
