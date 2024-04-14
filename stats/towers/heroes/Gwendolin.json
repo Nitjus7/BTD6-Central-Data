@@ -61,7 +61,8 @@
             "displayName": "Cocktail of Fire",
             "cooldown": 30,
             "duration": 12,
-            "description": "Drops a Fire Wall at the targeted location on the track."
+            "description": "Drops a Fire Wall at the targeted location on the track.",
+            "emissions": ["fire-wall"]
         },
         "firestorm": {
             "displayName": "Firestorm",
