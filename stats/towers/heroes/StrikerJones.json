@@ -33,7 +33,7 @@
         "concussive-shell": {
             "displayName": "Concussive Shell",
             "cooldown": 16,
-            "description": "Launches a Shell at the strongest target on screen, doing damage to and stunning nearby Bloons.",
+            "description": "Launches a Stunning Shell at the strongest target on screen, doing damage to and stunning nearby Bloons.",
             "emissions": ["shell"]
         },
         "target-focus": {
