@@ -24,7 +24,6 @@
         },
         "totem": {
             "displayName": "Nature's Ward Totem",
-            "dmgBase": 0,
             "range": 32,
             "pierce": null,
             "attackRate": 18,
@@ -33,7 +32,6 @@
         },
         "tree-wall": {
             "displayName": "Tree Wall",
-            "dmgBase": 0,
             "pierce": 3000,
             "description": "Absorbs all Bloons and gives double the normal income when full. Cannot absorb Blimps that go past the pierce limit."
         }
