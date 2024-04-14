@@ -39,8 +39,6 @@
             "dmgBase": 1,
             "tickRate": 1.5,
             "duration": 3,
-            "damageType": "fire",
-            "camo": false
         },
         "firestorm-burn": {
             "displayName": "Firestorm Burn",
@@ -48,8 +46,6 @@
             "dmgBonusMOAB": 14,
             "tickRate": 1,
             "duration": 8,
-            "damageType": "fire",
-            "camo": false,
             "special": "Ticks twice as fast on Bloons."
         },
         "fire-wall-burn": {
