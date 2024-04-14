@@ -91,9 +91,10 @@
         },
         {
             "level": 7,
-            "addEmissions": [{
+            "addProperties": [{
                 "target": "arrow",
-                "emissionName": "explosion"
+                "key": "emissions",
+                "value": ["explosion"]
             }]
         },
         {
