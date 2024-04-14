@@ -47,7 +47,7 @@
             "description": "Instantly resets the ability cooldowns of all Bomb Shooters and Mortars on screen."
         }
     },
-    "support": {
+    "supports": {
         "explosives-buff": {
             "displayName": "Explosives Buff",
             "target": "All Bomb Shooters and Mortars on screen.",
