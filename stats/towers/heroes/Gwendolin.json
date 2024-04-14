@@ -26,7 +26,6 @@
             "dmgBase": 3,
             "range": 38,
             "pierce": 100,
-            "attackRate": null,
             "damageType": "fire",
             "camo": false,
             "special": "Fires after every 40 shots. Cannot fire more than once per 4.5sec.",
