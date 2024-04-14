@@ -158,7 +158,7 @@
           "rbe": 55760,
           "speed": 0.18,
           "spawns": "2x ZOMG, 3x DDT",
-          "immuneTo": null
+          "immuneTo": "All forms of stun and slow."
       }
   ]
 }
