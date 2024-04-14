@@ -38,7 +38,7 @@
             "displayName": "Flamethrower Burn",
             "dmgBase": 1,
             "tickRate": 1.5,
-            "duration": 3,
+            "duration": 3
         },
         "firestorm-burn": {
             "displayName": "Firestorm Burn",
