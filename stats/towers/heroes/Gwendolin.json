@@ -126,7 +126,7 @@
             "addProperties": [{
                 "target": "flamethrower",
                 "key": "emissions",
-                "value": ["flamethrower-burn"]
+                "value": ["heatwave", "flamethrower-burn"]
             }]
         },
         {
