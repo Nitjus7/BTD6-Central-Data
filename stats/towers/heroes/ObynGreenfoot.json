@@ -40,7 +40,8 @@
         "brambles": {
             "displayName": "Brambles",
             "cooldown": 30,
-            "description": "Creates a Bramble Pile on the track."
+            "description": "Creates a Bramble Pile on the track.",
+            "emissions": ["bramble-pile"]
         },
         "wall-of-trees": {
             "displayName": "Wall of Trees",
