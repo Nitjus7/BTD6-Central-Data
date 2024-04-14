@@ -92,7 +92,7 @@
     "levels": [
         {
             "level": 1,
-            "addAttack": "flamethrower"
+            "addAttacks": ["flamethrower"]
         },
         {
             "level": 2,
