@@ -230,7 +230,12 @@
                     "type": "replace",
                     "value": "Each arrow attacks a Bloon 3 times with a 7.5% chance of hitting the target."
                 }
-            ]
+            ],
+            "addProperties": [{
+                "target": "storm-arrow",
+                "key": "dmgBonusCeram",
+                "value": 18
+            }]
         },
         {
             "level": 19,
@@ -269,6 +274,12 @@
                     "item": "dmgBonusMOAB",
                     "type": "add",
                     "value": 8
+                },
+                {
+                    "target": "storm-arrow",
+                    "item": "dmgBonusCeram",
+                    "type": "add",
+                    "value": 6
                 },
                 {
                     "target": "storm-arrow",
