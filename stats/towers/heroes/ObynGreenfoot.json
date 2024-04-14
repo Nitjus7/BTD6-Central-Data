@@ -85,7 +85,7 @@
     "levels": [
         {
             "level": 1,
-            "addAttack": "spirit"
+            "addAttacks": ["spirit"]
         },
         {
             "level": 2,
@@ -97,7 +97,7 @@
         },
         {
             "level": 4,
-            "addAttack": "totem"
+            "addAttacks": ["totem"]
         },
         {
             "level": 5,
