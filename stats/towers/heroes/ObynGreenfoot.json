@@ -25,6 +25,8 @@
         "totem": {
             "displayName": "Nature's Ward Totem",
             "range": 32,
+            "damageType": "normal",
+            "camo": true,
             "pierce": null,
             "attackRate": 18,
             "lifespan": 15,
