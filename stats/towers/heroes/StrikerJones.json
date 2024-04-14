@@ -17,7 +17,6 @@
             "displayName": "Stunning Shell",
             "dmgBase": 2,
             "pierce": 48,
-            "attackRate": null,
             "damageType": "normal",
             "camo": false,
             "emissions": ["shell-stun"]
