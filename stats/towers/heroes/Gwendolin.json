@@ -109,7 +109,11 @@
         },
         {
             "level": 4,
-            "
+            "addProperties": [{
+                "target": "flamethrower",
+                "key": "emissions",
+                "value": ["heatwave"]
+            }]
         },
         {
             "level": 5,
