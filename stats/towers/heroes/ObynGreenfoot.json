@@ -254,7 +254,7 @@
         },
         {
             "level": 18,
-            "addSupports": "improved-wrath-buff"
+            "addSupports": ["improved-wrath-buff"]
         },
         {
             "level": 19,
