@@ -28,7 +28,8 @@
             "pierce": 100,
             "damageType": "fire",
             "camo": false,
-            "special": "Fires after every 40 shots. Cannot fire more than once per 4.5sec.",
+            "frequency": "Fires after every 40 shots. Cannot fire more than once per 4.5sec.",
+            "description": "Applies a Heat it Up Buff to all towers in range.", 
             "emissions": ["heat-it-up-buff"]
         }
     },
@@ -79,7 +80,7 @@
         },
         "heat-it-up-buff": {
             "displayName": "Heat it Up Buff",
-            "target": "All Towers within Gwendolin's range.",
+            "target": "All Towers",
             "buff": "+1 pierce and lead popping",
             "duration": 8
         }
