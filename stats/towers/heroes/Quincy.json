@@ -38,7 +38,7 @@
         "rapid-shot": {
             "displayName": "Rapid Shot",
             "cooldown": 60,
-            "duration": 2.5,
+            "duration": 2,
             "addDurationPerLevel": 0.5,
             "description": "The Arrow attack cooldown is reduced to 33%."
         },
