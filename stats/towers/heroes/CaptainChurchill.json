@@ -1,0 +1,277 @@
+{
+    "hero": "Captain Churchill",
+    "cost": 2000,
+    "xpCurve": 1.71,
+    "footprintRadius": 8,
+    "range": 63,
+    "projectiles": {
+        "shell": {
+            "displayName": "Explosive Shell",
+            "dmgBase": 1,
+            "pierce": 12,
+            "attackRate": 0.7,
+            "damageType": "explosion",
+            "camo": false,
+            "special": "Can explode 3 times"
+        },
+        "machine-gun": {
+            "displayName": "Machine Gun",
+            "dmgBase": 1,
+            "pierce": 1,
+            "damageType": "sharp",
+            "camo": false
+        },
+        "barrage-missile": {
+            "displayName": "Barrage Missile",
+            "dmgBase": 0,
+            "dmgBonusMOAB": 200,
+            "pierce": 1,
+            "attackRate": 0.5,
+            "damageType": "normal",
+            "camo": true
+        }
+    },
+    "abilities": {
+        "armor-piercing-shells": {
+            "displayName": "Armor Piercing Shells",
+            "cooldown": 30,
+            "duration": 10,
+            "addDurationPerLevel": 0.5,
+            "description": "Explosive Shell gets +3 bonus Ceramic damage, +3 bonus MOAB damage, can pop all bloon types, and can explode 2 additional times."
+        },
+        "moab-barrage": {
+            "displayName": "MOAB Barrage",
+            "cooldown": 60,
+            "duration": 7.5,
+            "description": "Fires Barrage Missiles at each of the 10 strongest blimps on screen.",
+            "emissions": ["barrage-missile"]
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttacks": ["shell"]
+        },
+        {
+            "level": 2,
+            "editItems": [{
+                "target": "shell",
+                "item": "pierce",
+                "type": "add",
+                "value": 3
+            }]
+        },
+        {
+            "level": 3,
+            "addAbility": "armor-piercing-shells"
+        },
+        {
+            "level": 4,
+            "addRange": 3
+        },
+        {
+            "level": 5,
+            "addAttacks": ["machine-gun"],
+            "editItems": [{
+                "target": "armor-piercing-shells",
+                "item": "description",
+                "type": "replace",
+                "value": "Explosive Shell gets +3 bonus Ceramic damage, +3 bonus MOAB damage, can pop all bloon types, and can explode 2 additional times. Machine Gun can pop all Bloon types."
+            }]
+        },
+        {
+            "level": 6,
+            "editItems": [
+            {
+                "target": "shell",
+                "item": "camo",
+                "type": "replace",
+                "value": true
+            },
+            {
+                "target": "machine-gun",
+                "item": "camo",
+                "type": "replace",
+                "value": true
+            }]
+        },
+        {
+            "level": 7,
+            "editItems": [
+                {
+                    "target": "shell",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Can explode 4 times"
+                },
+                {
+                    "target": "shell",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 8,
+            "editItems": [{
+                "target": "shell",
+                "item": "attackRate",
+                "type": "divide",
+                "value": 1.4
+            }]
+        },
+        {
+            "level": 9,
+            "editItems": [
+                {
+                    "target": "shell",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Can explode 5 times"
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "addAbility": "moab-barrage"
+        },
+        {
+            "level": 11,
+            "editItems": [
+                {
+                    "target": "shell",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "shell",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Can explode 6 times"
+                },
+                {
+                    "target": "shell",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [{
+                "target": "armor-piercing-shells",
+                "item": "description",
+                "type": "replace",
+                "value": "Explosive Shell gets +1 damage, +7 bonus Ceramic damage, +7 bonus MOAB damage, can pop all bloon types, and can explode 2 additional times. Machine Gun can pop all bloon types."
+            }]
+        },
+        {
+            "level": 14,
+            "editItems": [
+                {
+                    "target": "shell",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "machine-gun",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "addProperties": [
+                {
+                    "target": "shell",
+                    "key": "dmgBonusFortified",
+                    "value": 1
+                },
+                {
+                    "target": "machine-gun",
+                    "key": "dmgBonusFortified",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "editItems": [
+                {
+                    "target": "shell",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.6
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [{
+                "target": "armor-piercing-shells",
+                "item": "description",
+                "type": "replace",
+                "value": "Explosive Shell gets +2 damage, +11 bonus Ceramic damage, +11 bonus MOAB damage, can pop all bloon types, and can explode 2 additional times. Machine Gun can pop all bloon types."
+            }]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "shell",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editItems": [
+                {
+                    "target": "shell",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Can explode 7 times"
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "editItems": [
+                {
+                    "target": "moab-barrage",
+                    "item": "cooldown",
+                    "type": "subtract",
+                    "value": 30
+                },
+                {
+                    "target": "moab-barrage",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Fires Barrage Missiles at each of the 10 strongest blimps on screen and gives Explosive Shell +3 damage."
+                },
+                {
+                    "target": "barrage-missile",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 300
+                }
+            ]
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
