@@ -291,8 +291,8 @@
                 {
                     "target": "cursed-status",
                     "item": "dmgBonusMOAB",
-                    "type": "subtract",
-                    "value": 3
+                    "type": "replace",
+                    "value": 25
                 }
             ]
         },
