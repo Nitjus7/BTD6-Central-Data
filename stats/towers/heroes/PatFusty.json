@@ -22,7 +22,7 @@
             "damageType": "normal",
             "frequency": "Every 5th Slam",
             "description": "Bloons hit move backward at 3x speed for 1sec. Affects up to MOABs.",
-            "camo": true
+            "camo": false
         },
         "storm-arrow": {
             "displayName": "Storm Arrow",
