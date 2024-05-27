@@ -37,13 +37,13 @@
     },
     "statuses": {
         "cursed-status": {
-            "displayName": "Cursed",
+            "displayName": "Cursed Status",
             "dmgBase": 1,
             "tickRate": 2.5,
             "duration": 2.5
         },
         "hexed-status": {
-            "displayName": "Hexed",
+            "displayName": "Hexed Status",
             "dmgBase": "4% + 1",
             "tickRate": 1,
             "duration": 25,
