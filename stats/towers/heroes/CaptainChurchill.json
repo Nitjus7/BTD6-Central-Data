@@ -264,7 +264,7 @@
                 },
                 {
                     "target": "barrage-missile",
-                    "item": "dmgBase",
+                    "item": "dmgBonusMOAB",
                     "type": "add",
                     "value": 300
                 }
