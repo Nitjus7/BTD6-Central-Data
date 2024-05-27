@@ -1,0 +1,332 @@
+{
+    "hero": "Ezili",
+    "cost": 600,
+    "xpCurve": 1,
+    "footprintRadius": 7,
+    "range": 38,
+    "projectiles": {
+        "curse": {
+            "displayName": "Curse",
+            "dmgBase": 1,
+            "pierce": 5,
+            "attackRate": 1.2,
+            "damageType": "plasma",
+            "camo": true,
+            "description": "Applies Cursed status to the main target.",
+            "emissions": ["cursed-status"]
+        },
+        "fire-wall": {
+            "displayName": "Fire Wall",
+            "dmgBase": 1,
+            "pierce": 20,
+            "attackRate": 0.1,
+            "damageType": "fire",
+            "camo": true
+        },
+        "heatwave": {
+            "displayName": "Heatwave",
+            "dmgBase": 3,
+            "range": 38,
+            "pierce": 100,
+            "damageType": "fire",
+            "camo": false,
+            "frequency": "Fires after every 40 shots. Cannot fire more than once per 4.5sec.",
+            "description": "Applies a Heat it Up Buff to all towers in range.", 
+            "emissions": ["heat-it-up-buff"]
+        }
+    },
+    "statuses": {
+        "cursed-status": {
+            "displayName": "Cursed",
+            "dmgBase": 1,
+            "tickRate": 2.5,
+            "duration": 2.5
+        },
+        "hexed-status": {
+            "displayName": "Hexed",
+            "dmgBase": "4% + 1",
+            "tickRate": 1,
+            "duration": 25,
+            "special": "Affected Bloon spawns no children. If the host is popped with time remaining, the hex jumps to the next targeted Blimp."
+        },
+        "fire-wall-burn": {
+            "displayName": "Fire Wall Burn"
+        }
+    },
+    "abilities": {
+        "heartstopper": {
+            "displayName": "Heartstopper",
+            "cooldown": 45,
+            "duration": 10,
+            "description": "Regrow Bloons can't regrow and Purple Bloons lose immunities."
+        },
+        "sacrificial-totem": {
+            "displayName": "Sacrificial Totem",
+            "cooldown": 90,
+            "duration": 10,
+            "range": 78,
+            "description": "Takes away 10 lives. Gives all towers in range 85% attack cooldown, +1 pierce, +25% range, +25% projectile speed, and camo detection. Wizards instead get 80% attack cooldown and +2 pierce."
+        },
+        "moab-hex": {
+            "displayName": "MOAB Hex",
+            "cooldown": 60,
+            "description": "Applies Hexed status to the targeted Blimp. Cannot affect BADs.",
+            "emissions": ["hexed-status"]
+        }
+    },
+    "supports": {
+        "zombloon-buff": {
+            "displayName": "Zombloon Buff",
+            "target": "All x - x - 4+ Wizards on screen",
+            "buff": "Zombloons get +1 pierce. Zombie MOABs and Zombie BFBs get +10 pierce."
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttacks": ["curse"]
+        },
+        {
+            "level": 2,
+            "addRange": 3
+        },
+        {
+            "level": 3,
+            "addAbility": "heartstopper"
+        },
+        {
+            "level": 4,
+            "editItems": [
+                {
+                    "target": "curse",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Applies Cursed status to all Bloons hit. Does +1 damage to the main target."
+                }
+            ]
+        },
+        {
+            "level": 5,
+            "editItems": [{
+                "target": "curse",
+                "item": "attackRate",
+                "type": "divide",
+                "value": 1.2
+            }]
+        },
+        {
+            "level": 6,
+            "editItems": [
+                {
+                    "target": "cursed-status",
+                    "item": "tickRate",
+                    "type": "replace",
+                    "value": 1.8
+                },
+                {
+                    "target": "cursed-status",
+                    "item": "duration",
+                    "type": "replace",
+                    "value": 5.4
+                }
+            ]
+        },
+        {
+            "level": 7,
+            "addAbility": "sacrificial-totem"
+        },
+        {
+            "level": 8,
+            "addProperties": [
+                {
+                    "target": "curse",
+                    "key": "dmgBonusMOAB",
+                    "value": 19
+                },
+                {
+                    "target": "cursed-status",
+                    "key": "dmgBonusMOAB",
+                    "value": 29
+                }
+            ],
+            "editItems": [
+                {
+                    "target": "cursed-status",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 9,
+            "addProperties": [
+                {
+                    "target": "curse",
+                    "key": "special",
+                    "value": "Removes Camo, Regrow, and Fortified properties from regular Bloons. Doesn't affect Blimps."
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "addAbility": "moab-hex"
+        },
+        {
+            "level": 11,
+            "addRange": 2,
+            "addSupports": ["zombloon-buff"]
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "curse",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 10
+                },
+                {
+                    "target": "heartstopper",
+                    "item": "cooldown",
+                    "type": "subtract",
+                    "value": 5
+                },
+                {
+                    "target": "heartstopper",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [
+                {
+                    "target": "curse",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "editItems": [
+                {
+                    "target": "cursed-status",
+                    "item": "tickRate",
+                    "type": "replace",
+                    "value": 1
+                },
+                {
+                    "target": "cursed-status",
+                    "item": "duration",
+                    "type": "replace",
+                    "value": 4
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "addRange": 2,
+            "editItems": [
+                {
+                    "target": "cursed-status",
+                    "item": "duration",
+                    "type": "multiply",
+                    "value": 1.5
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "editItems": [
+                {
+                    "target": "sacrificial-totem",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 20
+                },
+                {
+                    "target": "sacrificial-totem",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Takes away 1 life. Gives all towers in range 85% attack cooldown, +1 pierce, +25% range, +25% projectile speed, and camo detection. Wizards instead get 80% attack cooldown and +2 pierce."
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [
+                {
+                    "target": "curse",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "curse",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.8
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editItems": [
+                {
+                    "target": "cursed-status",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 4
+                },
+                {
+                    "target": "cursed-status",
+                    "item": "dmgBonusMOAB",
+                    "type": "subtract",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "editItems": [
+                {
+                    "target": "curse",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 20
+                },
+                {
+                    "target": "moab-hex",
+                    "item": "cooldown",
+                    "type": "subtract",
+                    "value": 20
+                },
+                {
+                    "target": "hexed-status",
+                    "item": "dmgBase",
+                    "type": "replace",
+                    "value": "5% + 1"
+                },
+                {
+                    "target": "moab-hex",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Applies Hexed status to the targeted Blimp."
+                }
+            ]
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
