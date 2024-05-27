@@ -1,0 +1,274 @@
+{
+    "hero": "Pat Fusty",
+    "cost": 800,
+    "xpCurve": 1.425,
+    "footprintRadius": 8,
+    "range": 24,
+    "projectiles": {
+        "slam": {
+            "displayName": "Slam",
+            "dmgBase": 2,
+            "dmgBonusCeram": 2,
+            "pierce": 10,
+            "attackRate": 1.1,
+            "damageType": "normal",
+            "camo": false,
+            "special": "Does +1 damage to the main target"
+        },
+        "slap": {
+            "displayName": "Slap",
+            "dmgBase": 0,
+            "pierce": 8,
+            "damageType": "normal",
+            "frequency": "Every 5th Slam",
+            "description": "Bloons hit move backward at 3x speed for 1sec. Affects up to MOABs.",
+            "camo": true
+        },
+        "storm-arrow": {
+            "displayName": "Storm Arrow",
+            "dmgBase": 6,
+            "dmgBonusMOAB": 6,
+            "pierce": null,
+            "attackRate": 0.05,
+            "range": 100,
+            "damageType": "sharp",
+            "camo": true,
+            "special": "Each arrow attacks a Bloon 3 times with a 5% chance of hitting the target."
+        }
+    },
+    "statuses": {
+        "slam-stun": {
+            "displayName": "Slam Stun",
+            "duration": 1,
+            "description": "Cannot stun blimps."
+        }
+    },
+    "abilities": {
+        "rallying-roar": {
+            "displayName": "Rallying Roar",
+            "cooldown": 45,
+            "duration": 8,
+            "range": 30,
+            "description": "All Towers in range and Pat Fusty get +1 damage."
+        },
+        "big-squeeze": {
+            "displayName": "Big Squeeze",
+            "cooldown": 20,
+            "description": "Grabs the strongest blimp in range and fully pops it over 4s, stunning the children for 2s. Pat Fusty can't attack while squeezing a blimp. Can't squeeze BADs."
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttacks": ["slam"]
+        },
+        {
+            "level": 2,
+            "description": "Slam gets increased blast radius"
+        },
+        {
+            "level": 3,
+            "addAbility": "rallying-roar"
+        },
+        {
+            "level": 4,
+            "editItems": [{
+                "target": "slam",
+                "item": "attackRate",
+                "type": "multiply",
+                "value": 0.8181818181818181
+            }]
+        },
+        {
+            "level": 5,
+            "addProperties": [{
+                "target": "slam",
+                "key": "emissions",
+                "value": ["slap"]
+            }]
+        },
+        {
+            "level": 6,
+            "editItems": [{
+                "target": "slam",
+                "item": "emissions",
+                "type": "replace",
+                "value": ["slap", "slam-stun"]
+            }]
+        },
+        {
+            "level": 7,
+            "editItems": [
+                {
+                    "target": "slam",
+                    "item": "damage",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "slam",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "level": 8,
+            "editItems": [
+                {
+                    "target": "slam",
+                    "item": "attackRate",
+                    "type": "divide",
+                    "value": 1.2
+                }
+            ]
+        },
+        {
+            "level": 9,
+            "addRange": 3
+        },
+        {
+            "level": 10,
+            "addAbility": "big-squeeze"
+        },
+        {
+            "level": 11,
+            "editItems": [
+                {
+                    "target": "slam",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.86666666666666666666666666666667
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "arrow",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [
+                {
+                    "target": "slam-stun",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 0.1
+                },
+                {
+                    "target": "slam-stun",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "MOABs are stunned for half as long."
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "editItems": [
+                {
+                    "target": "rallying-roar",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "rallying-roar",
+                    "item": "range",
+                    "type": "add",
+                    "value": 10
+                },
+                {
+                    "target": "rallying-roar",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "All Towers in range and Pat Fusty get +1 damage."
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "editItems": [
+                {
+                    "target": "slap",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 8
+                },
+                {
+                    "target": "slap",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Bloons hit move backward at 3x speed for 1sec. Uses 2 pierce per Ceramic. Affects up to MOABs."
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "addRange": 2,
+            "editItems": [
+                {
+                    "target": "slam",
+                    "item": "dmgBonusCeram",
+                    "type": "add",
+                    "value": 6
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [
+                {
+                    "target": "slam",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.84615385
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "slam",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editItems": [
+                {
+                    "target": "slam",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "editItems": [
+                {
+                    "target": "big-squeeze",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Grabs the strongest blimp in range and fully pops it over 4s, stunning the children for 2s. Pat Fusty can't attack while squeezing a blimp. Can't squeeze BADs."
+                }           
+            ]
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
