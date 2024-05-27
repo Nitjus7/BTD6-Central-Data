@@ -1,9 +1,9 @@
 {
-    "hero": "Pat Fusty",
-    "cost": 800,
-    "xpCurve": 1.425,
-    "footprintRadius": 8,
-    "range": 24,
+    "hero": "Adora",
+    "cost": 1000,
+    "xpCurve": 1.71,
+    "footprintRadius": 7,
+    "range": 45,
     "projectiles": {
         "bolt": {
             "displayName": "Divine Bolt",
