@@ -1,0 +1,236 @@
+{
+    "hero": "Benjamin",
+    "cost": 1200,
+    "xpCurve": 1.5,
+    "footprintRadius": 7,
+    "range": 20,
+    "projectiles": {
+        "trojan": {
+            "displayName": "Bloon Trojan",
+            "pierce": 1,
+            "attackRate": 6,
+            "damageType": "normal",
+            "camo": false,
+            "special": "Has a random attack rate between 5sec and 7sec. Targets a random Bloon up to a MOAB. Affected Bloon spawns no children and gives $1 + $1/layer."
+        }
+    },
+    "abilities": {
+        "biohack": {
+            "displayName": "Biohack",
+            "cooldown": 30,
+            "description": "The nearest 4 towers get +1 damage for 6 seconds, then can't attack for 2 seconds."
+        },
+        "syphon-funding": {
+            "displayName": "Syphon Funding",
+            "cooldown": 65,
+            "duration": 10,
+            "description": "Newly spawned Bloons are downgraded by 1 layer and give double cash. Doesn't affect DDTs or BADs.",
+            "emissions": ["barrage-missile"]
+        }
+    },
+    "supports": {
+        "income": {
+            "displayName": "Income",
+            "description": "Gives $80 at the end of each round."
+        },
+        "skimming": {
+            "displayName": "Skimming",
+            "description": "Gives $1 per Bloon entering the map."
+        },
+        "cyber-security": {
+            "displayName": "Cyber Security",
+            "description": "Regenerates 5 lives at the end of each round. Cannot go above starting lives."
+        },
+        "bank-hack": {
+            "displayName": "Bank Hack",
+            "target": "All x - 3+ - x Banana Farms on screen",
+            "buff": "+5% income during the round"
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addSupports": ["income"]
+        },
+        {
+            "level": 2,
+            "editItems": [{
+                "target": "income",
+                "item": "description",
+                "type": "replace",
+                "value": "Gives $120 at the end of each round."
+            }]
+        },
+        {
+            "level": 3,
+            "addAbility": "biohack"
+        },
+        {
+            "level": 4,
+            "addSupports": ["skimming"]
+        },
+        {
+            "level": 5,
+            "addSupports": ["bank-hack"]
+        },
+        {
+            "level": 6,
+            "addSupports": ["cyber-security"]
+        },
+        {
+            "level": 7,
+            "addAttacks": ["trojan"]
+        },
+        {
+            "level": 8,
+            "editItems": [{
+                "target": "income",
+                "item": "description",
+                "type": "replace",
+                "value": "Gives $250 at the end of each round."
+            }]
+        },
+        {
+            "level": 9,
+            "editItems": [
+                {
+                    "target": "bank-hack",
+                    "item": "buff",
+                    "type": "replace",
+                    "value": "+12% income during the round"
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "addAbility": "syphon-funding"
+        },
+        {
+            "level": 11,
+            "editItems": [
+                {
+                    "target": "income",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Gives $1000 at the end of each round."
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "skimming",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Gives $2 per Bloon entering the map."
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [{
+                "target": "biohack",
+                "item": "description",
+                "type": "replace",
+                "value": "The nearest 6 towers get +2 damage for 8 seconds, then can't attack for 2 seconds."
+            }]
+        },
+        {
+            "level": 14,
+            "editItems": [
+                {
+                    "target": "cyber-security",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Regenerates 10 lives at the end of each round. Can go up to 100 over starting lives."
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "editItems": [
+                {
+                    "target": "income",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Gives $2500 at the end of each round."
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "editItems": [
+                {
+                    "target": "trojan",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.583333333
+                },
+                {
+                    "target": "trojan",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Has a random attack rate between 3sec and 4sec. Targets a random Bloon up to a MOAB. Affected Bloon spawns no children and gives $1 + $2/layer."
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [{
+                "target": "income",
+                "item": "description",
+                "type": "replace",
+                "value": "Gives $5000 at the end of each round."
+            }]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "trojan",
+                    "item": "camo",
+                    "type": "replace",
+                    "value": true
+                },
+                {
+                    "target": "trojan",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Has a random attack rate between 3sec and 4sec. Targets a random Bloon up to a BFB/DDT. Affected Bloon spawns no children and gives $1 + $2/layer."
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editItems": [
+                {
+                    "target": "biohack",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "The nearest 6 towers get +3 damage for 8 seconds, then can't attack for 2 seconds."
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "editItems": [
+                {
+                    "target": "syphon-funding",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 10
+                },
+                {
+                    "target": "syphon-funding",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Newly spawned Bloons are downgraded by 1 layer and give triple cash. Doesn't affect DDTs or BADs."
+                }
+            ]
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
