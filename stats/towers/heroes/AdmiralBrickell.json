@@ -23,7 +23,7 @@
             "damageType": "explosion",
             "camo": false,
             "description": "Has a 0.4s activation delay between each mine. Prefers spots closer to the track.",
-            "special": "Can pop any type of bloon only to the main target."
+            "special": "Can pop a Black Bloon if it's the main target."
         },
         "mega-mine": {
             "displayName": "Mega Mine",
