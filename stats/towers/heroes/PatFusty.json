@@ -39,7 +39,7 @@
     "statuses": {
         "slam-stun": {
             "displayName": "Slam Stun",
-            "duration": 1,
+            "duration": 0.3,
             "description": "Cannot stun blimps."
         }
     },
