@@ -1,0 +1,303 @@
+{
+    "hero": "Pat Fusty",
+    "cost": 800,
+    "xpCurve": 1.425,
+    "footprintRadius": 8,
+    "range": 24,
+    "projectiles": {
+        "bolt": {
+            "displayName": "Divine Bolt",
+            "dmgBase": 1,
+            "pierce": 5,
+            "attackRate": 1,
+            "damageType": "plasma",
+            "camo": false
+        },
+        "light-beam": {
+            "displayName": "Light Beam",
+            "dmgBase": 3,
+            "dmgBonusFortified": 3,
+            "pierce": 8,
+            "attackRate": 0.05,
+            "damageType": "plasma",
+            "camo": false
+        },
+        "true-form": {
+            "displayName": "True Form",
+            "description": "Divine Bolt gets +8 damage (10 base), +30 pierce (43). Ball of Light gets +80 damage (100 base), +35 pierce (48).",
+            "special": "Only unlocks when a True Sun God is purchased in range of a Level 20 Adora."
+        }
+    },
+    "abilities": {
+        "long-arm-of-light": {
+            "displayName": "Long Arm of Light",
+            "cooldown": 45,
+            "duration": 10,
+            "description": "Adora's Divine Bolt gets double its base range and pierce, and can pop all Bloon types."
+        },
+        "blood-sacrifice": {
+            "displayName": "Blood Sacrifice",
+            "cooldown": 30,
+            "duration": 10,
+            "description": "Adora gets 4x the cost of the sacrificed tower in Hero XP. Gives a Divine Buff.",
+            "emissions": ["divine-buff"]
+        },
+        "ball-of-light": {
+            "displayName": "Ball of Light",
+            "cooldown": 60,
+            "duration": 12,
+            "description": "Creates a Ball of Light.",
+            "emissions": ["light-beam"]
+        }
+    },
+    "supports": {
+        "divine-buff": {
+            "displayName": "Divine Buff",
+            "target": "Adora and 3+ - x - x Super Monkeys in range",
+            "buff": "+10% range and 90% attack cooldown. Buff gets 1% better per $100 sacrificed, maxing at +25% range and 75% attack cooldown."
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttacks": ["bolt"]
+        },
+        {
+            "level": 2,
+            "addRange": 4
+        },
+        {
+            "level": 3,
+            "addAbility": "long-arm-of-light"
+        },
+        {
+            "level": 4,
+            "addProperties": [{
+                "target": "bolt",
+                "key": "projectiles",
+                "value": 2
+            }]
+        },
+        {
+            "level": 5,
+            "editItems": [{
+                "target": "bolt",
+                "item": "pierce",
+                "type": "add",
+                "value": 3
+            }]
+        },
+        {
+            "level": 6,
+            "editItems": [{
+                "target": "bolt",
+                "item": "projectiles",
+                "type": "add",
+                "value": 1
+            }]
+        },
+        {
+            "level": 7,
+            "addAbility": "blood-sacrifice"
+        },
+        {
+            "level": 8,
+            "editItems": [
+                {
+                    "target": "bolt",
+                    "item": "projectiles",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 9,
+            "addRange": 5,
+            "addProperties": [{
+                "target": "bolt",
+                "key": "dmgBonusFortified",
+                "value": 1
+            }]
+        },
+        {
+            "level": 10,
+            "addAbility": "ball-of-light"
+        },
+        {
+            "level": 11,
+            "editItems": [
+                {
+                    "target": "bolt",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.85
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "bolt",
+                    "item": "projectiles",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [
+                {
+                    "target": "bolt",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 5
+                },
+                {
+                    "target": "bolt",
+                    "item": "dmgBonusFortified",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "ball-of-light",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "editItems": [
+                {
+                    "target": "bolt",
+                    "item": "projectiles",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "editItems": [
+                {
+                    "target": "bolt",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "ball-of-light",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "ball-of-light",
+                    "item": "dmgBonusFortified",
+                    "type": "add",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "editItems": [
+                {
+                    "target": "long-arm-of-light",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 5
+                },
+                {
+                    "target": "long-arm-of-light",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Adora's Divine Bolt gets double its base range, damage, and pierce, and can pop all Bloon types."
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [
+                {
+                    "target": "bolt",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.8235
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "bolt",
+                    "item": "projectiles",
+                    "type": "add",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "addRange": 5,
+            "editItems": [
+                {
+                    "target": "bolt",
+                    "item": "dmgBonusFortified",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "editItems": [
+                {
+                    "target": "blood-sacrifice",
+                    "item": "duration",
+                    "type": "replace",
+                    "value": 60
+                },
+                {
+                    "target": "divine-buff",
+                    "item": "buff",
+                    "type": "replace",
+                    "value": "+10% range and 90% attack cooldown. Buff gets 1% better per $100 sacrificed, maxing at +50% range and 50% attack cooldown."
+                },
+                {
+                    "target": "ball-of-light",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 8
+                },
+                {
+                    "target": "light-beam",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 15
+                },
+                {
+                    "target": "light-beam",
+                    "item": "dmgBonusFortified",
+                    "type": "add",
+                    "value": 15
+                },
+                {
+                    "target": "light-beam",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                }
+            ],
+            "addAttacks": ["true-form"]
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
