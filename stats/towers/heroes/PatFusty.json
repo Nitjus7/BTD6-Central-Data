@@ -23,17 +23,6 @@
             "frequency": "Every 5th Slam",
             "description": "Bloons hit move backward at 3x speed for 1sec. Affects up to MOABs.",
             "camo": false
-        },
-        "storm-arrow": {
-            "displayName": "Storm Arrow",
-            "dmgBase": 6,
-            "dmgBonusMOAB": 6,
-            "pierce": null,
-            "attackRate": 0.05,
-            "range": 100,
-            "damageType": "sharp",
-            "camo": true,
-            "special": "Each arrow attacks a Bloon 3 times with a 5% chance of hitting the target."
         }
     },
     "statuses": {
