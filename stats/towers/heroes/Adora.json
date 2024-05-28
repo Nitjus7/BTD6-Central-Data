@@ -190,13 +190,13 @@
                     "value": 1
                 },
                 {
-                    "target": "ball-of-light",
+                    "target": "light-beam",
                     "item": "dmgBase",
                     "type": "add",
                     "value": 2
                 },
                 {
-                    "target": "ball-of-light",
+                    "target": "light-beam",
                     "item": "dmgBonusFortified",
                     "type": "add",
                     "value": 2
