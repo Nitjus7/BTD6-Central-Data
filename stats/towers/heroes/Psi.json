@@ -103,7 +103,7 @@
                     "target": "psychic-blast",
                     "item": "description",
                     "type": "replace",
-                    "value": "Stuns up to 50 Bloons in range for 4s, and Blimps for 1.5s. Pulses again after 2s."
+                    "value": "Stuns up to 100 Bloons in range for 4s, and Blimps for 1.5s. Pulses again after 2s."
                 }
             ]
         },
