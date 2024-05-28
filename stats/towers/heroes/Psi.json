@@ -113,7 +113,7 @@
                 {
                     "target": "psychic",
                     "key": "emissions",
-                    "value": ["resonance"]
+                    "value": ["vibrations", "resonance"]
                 }
             ]
         },
