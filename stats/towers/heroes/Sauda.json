@@ -1,0 +1,391 @@
+{
+    "hero": "Sauda",
+    "cost": 600,
+    "xpCurve": 1.425,
+    "footprintRadius": 7,
+    "range": 23,
+    "projectiles": {
+        "slash": {
+            "displayName": "Slash",
+            "dmgBase": 1,
+            "dmgBonusMOAB": 1,
+            "dmgBonusCeram": 1,
+            "pierce": 4,
+            "attackRate": 0.4,
+            "damageType": "sharp",
+            "camo": true
+        },
+        "lingering-swords": {
+            "displayName": "Lingering Swords",
+            "dmgBase": 2,
+            "pierce": 5,
+            "tickRate": 0.2,
+            "damageType": "normal",
+            "camo": true
+        },
+        "prey": {
+            "displayName": "Prey Damage Bonus",
+            "description": "<b>Slash</b> and <b>Lingering Swords</b> get +2 damage, +20 bonus MOAB damage to stunned Bloons. <br> <b>Leaping Sword</b> gets +10 damage, +20 bonus MOAB damage to stunned Bloons."
+        }
+    },
+    "statuses": {
+        "bloon-bleed": {
+            "displayName": "Bloon Bleed",
+            "dmgBase": 1,
+            "dmgBonusMOAB": 19,
+            "tickRate": 2,
+            "duration": 4
+        }
+    },
+    "abilities": {
+        "leaping-sword": {
+            "displayName": "Leaping Sword",
+            "cooldown": 30,
+            "duration": 5,
+            "addDurationPerLevel": 0.5,
+            "description": "Launches at any targeted Bloon on screen doing 20 damage, +80 MOAB damage (100), 30 pierce, and spawns Lingering Swords. Can pop all Bloon types.",
+            "emissions": ["lingering-swords"]
+        },
+        "sword-charge": {
+            "displayName": "Sword Charge",
+            "cooldown": 90,
+            "duration": 18,
+            "description": "Charges backwards on all tracks doing 30 damage on up to 400 Bloons each."
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttacks": ["slash"]
+        },
+        {
+            "level": 2,
+            "editItems": [{
+                "target": "slash",
+                "item": "pierce",
+                "type": "add",
+                "value": 1
+            }]
+        },
+        {
+            "level": 3,
+            "addAbility": "leaping-sword"
+        },
+        {
+            "level": 4,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "slash",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "slash",
+                    "item": "dmgBonusCeram",
+                    "type": "add",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "level": 5,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.8
+                }
+            ]
+        },
+        {
+            "level": 6,
+            "addRange": 3,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "level": 7,
+            "addAttacks": ["prey"],
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "shatter"
+                }
+            ]
+        },
+        {
+            "level": 8,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.7813
+                }
+            ]
+        },
+        {
+            "level": 9,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "slash",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "slash",
+                    "item": "dmgBonusCeram",
+                    "type": "add",
+                    "value": 2
+                }
+            ],
+            "addProperties": [{
+                "target": "slash",
+                "key": "emissions",
+                "value": ["bloon-bleed"]
+            }]
+        },
+        {
+            "level": 10,
+            "addAbility": "sword-charge",
+            "editItems": [{
+                "target": "prey",
+                "item": "description",
+                "type": "replace",
+                "value": "<b>Slash</b> and <b>Lingering Swords</b> get +2 damage, +20 bonus MOAB damage to stunned Bloons. <br> <b>Leaping Sword</b> gets +10 damage, +20 bonus MOAB damage to stunned Bloons. <br> <b>Sword Charge</b> gets +15 damage, +30 bonus MOAB damage to stunned Bloons."
+            }]
+        },
+        {
+            "level": 11,
+            "editItems": [{
+                "target": "prey",
+                "item": "description",
+                "type": "replace",
+                "value": "<b>Slash</b> and <b>Lingering Swords</b> get +2 damage, +20 bonus MOAB damage to stunned Bloons. <br> <b>Slash</b> gets +1 damage, +10 bonus MOAB damage to Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Leaping Sword</b> gets +10 damage, +20 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Sword Charge</b> gets +15 damage, +30 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed)."
+            }]
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "leaping-sword",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Launches at any targeted Bloon on screen doing 40 damage, +160 MOAB damage (200), 50 pierce, and spawns Lingering Swords. Can pop all Bloon types."
+                },
+                {
+                    "target": "lingering-swords",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "prey",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "<b>Slash</b> gets +2 damage, +20 bonus MOAB damage to stunned Bloons. <br> <b>Slash</b> gets +1 damage, +10 bonus MOAB damage to Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Leaping Sword</b> gets +20 damage, +40 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Lingering Swords</b> get +3 damage, +25 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Sword Charge</b> gets +15 damage, +30 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed)."
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                },
+                {
+                    "target": "prey",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "<b>Slash</b> gets +3 damage, +21 bonus MOAB damage to stunned Bloons. <br> <b>Slash</b> gets +1 damage, +10 bonus MOAB damage to Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Leaping Sword</b> gets +20 damage, +40 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Lingering Swords</b> get +3 damage, +25 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Sword Charge</b> gets +15 damage, +30 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed)."
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.64
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "addRange": 3,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "lingering-swords",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "prey",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "<b>Slash</b> gets +3 damage, +21 bonus MOAB damage to stunned Bloons. <br> <b>Slash</b> gets +1 damage, +10 bonus MOAB damage to Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Leaping Sword</b> gets +40 damage, +80 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Lingering Swords</b> get +4 damage, +30 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Sword Charge</b> gets +15 damage, +30 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed)."
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "addRange": 20,
+            "editItems": [
+                {
+                    "target": "sword-charge",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Charges backwards on all tracks doing 120 damage on up to 400 Bloons each."
+                },
+                {
+                    "target": "prey",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "<b>Slash</b> gets +3 damage, +21 bonus MOAB damage to stunned Bloons. <br> <b>Slash</b> gets +1 damage, +10 bonus MOAB damage to Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Leaping Sword</b> gets +40 damage, +80 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Lingering Swords</b> get +4 damage, +30 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Sword Charge</b> gets +60 damage, +120 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed)."
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "slash",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "slash",
+                    "item": "dmgBonusCeram",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "prey",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "<b>Slash</b> gets +4 damage, +22 bonus MOAB damage to stunned Bloons. <br> <b>Slash</b> gets +2 damage, +11 bonus MOAB damage to Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Leaping Sword</b> gets +40 damage, +80 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Lingering Swords</b> get +4 damage, +30 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Sword Charge</b> gets +60 damage, +120 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed)."
+                },
+                {
+                    "target": "bloon-bleed",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 9
+                },
+                {
+                    "target": "bloon-bleed",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 21
+                },
+                {
+                    "target": "bloon-bleed",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "slash",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.625
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editItems": [
+                {
+                    "target": "prey",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "<b>Slash</b> gets +4 damage, +22 bonus MOAB damage to stunned Bloons. <br> <b>Slash</b> gets +2 damage, +11 bonus MOAB damage to Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Slash</b> gets +2 damage, +10 MOAB damage to Bloons that have Camo, Regrow, or Fortified. <br> <b>Leaping Sword</b> gets +40 damage, +80 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Lingering Swords</b> get +4 damage, +30 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Sword Charge</b> gets +60 damage, +120 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed)."
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "editItems": [
+                {
+                    "target": "leaping-sword",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Launches at any targeted Bloon on screen doing 400 damage, +160 MOAB damage (560), 70 pierce, and spawns Lingering Swords. Can pop all Bloon types."
+                },
+                {
+                    "target": "lingering-swords",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "sword-charge",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "UAV attacks with Improved UCAV Missiles."
+                },
+                {
+                    "target": "sword-charge",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Charges backwards on all tracks three times, doing 220 damage on up to 1400 Bloons."
+                },
+                {
+                    "target": "prey",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "<b>Slash</b> gets +4 damage, +22 bonus MOAB damage to stunned Bloons. <br> <b>Slash</b> gets +2 damage, +11 bonus MOAB damage to Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Slash</b> gets +2 damage, +10 MOAB damage to Bloons that have Camo, Regrow, or Fortified. <br> <b>Leaping Sword</b> gets +200 damage, +400 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Lingering Swords</b> get +6 damage, +40 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed). <br> <b>Sword Charge</b> gets +110 damage, +220 bonus MOAB damage to stunned Bloons and Bloons slowed or taking damage over time (not including Sauda's Bloon Bleed)."
+                }
+            ]
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
