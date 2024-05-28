@@ -48,8 +48,7 @@
         },
         "sword-charge": {
             "displayName": "Sword Charge",
-            "cooldown": 90,
-            "duration": 18,
+            "cooldown": 45,
             "description": "Charges backwards on all tracks doing 30 damage on up to 400 Bloons each."
         }
     },
