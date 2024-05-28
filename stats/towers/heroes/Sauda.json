@@ -264,7 +264,6 @@
         },
         {
             "level": 16,
-            "addRange": 20,
             "editItems": [
                 {
                     "target": "sword-charge",
