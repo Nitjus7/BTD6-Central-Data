@@ -1,0 +1,245 @@
+{
+    "hero": "Psi",
+    "cost": 1000,
+    "xpCurve": 1.5,
+    "footprintRadius": 7,
+    "range": "Infinite",
+    "description": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target Purples, Leads, Ceramics, or Blimps.",
+    "projectiles": {
+        "psychic": {
+            "displayName": "Psychic Attack",
+            "attackRate": 1,
+            "pierce": 1,
+            "damageType": "energy",
+            "camo": true,
+            "emissions": ["vibrations"]
+        },
+        "resonance": {
+            "displayName": "Destructive Resonance",
+            "dmgBase": 1,
+            "pierce": 10,
+            "damageType": "normal",
+            "camo": true
+        }
+    },
+    "statuses": {
+        "vibrations": {
+            "displayName": "Deadly Vibrations",
+            "description": "Kill time is 0.2s per layer. Cannot take longer than 15s."
+        }
+    },
+    "abilities": {
+        "psychic-blast": {
+            "displayName": "Psychic Blast",
+            "cooldown": 40,
+            "range": 70,
+            "description": "Stuns up to 50 Bloons in range for 4s, and Blimps for 1.5s."
+        },
+        "psionic-scream": {
+            "displayName": "Psionic Scream",
+            "cooldown": 60,
+            "description": "Targets up to 2000 Bloons. Psi has a 50% chance to either attack them with a Psychic Attack or knock them back 50-300 units."
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttacks": ["psychic"]
+        },
+        {
+            "level": 2,
+            "editItems": [{
+                "target": "vibrations",
+                "item": "description",
+                "type": "replace",
+                "value": "Kill time is 0.15s per layer. Cannot take longer than 15s."
+            }]
+        },
+        {
+            "level": 3,
+            "addAbility": "psychic-blast"
+        },
+        {
+            "level": 4,
+            "editItems": [{
+                "target": "psychic",
+                "item": "pierce",
+                "type": "add",
+                "value": 1
+            }]
+        },
+        {
+            "level": 5,
+            "editItems": [{
+                "target": "psychic",
+                "item": "attackRate",
+                "type": "multiply",
+                "value": 0.85
+            }]
+        },
+        {
+            "level": 6,
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target Purples, Ceramics, or Blimps.",
+            "editItems": [
+                {
+                    "target": "psychic",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "psychic",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "plasma"
+                }
+            ]
+        },
+        {
+            "level": 7,
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target Purples or Blimps.",
+            "editItems": [
+                {
+                    "target": "psychic-blast",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Stuns up to 50 Bloons in range for 4s, and Blimps for 1.5s. Pulses again after 2s."
+                }
+            ]
+        },
+        {
+            "level": 8,
+            "addProperties": [
+                {
+                    "target": "psychic",
+                    "key": "emissions",
+                    "value": ["resonance"]
+                }
+            ]
+        },
+        {
+            "level": 9,
+            "editDescription": "Psi attacks one Bloon at a time with each Psychic Attack, no matter where it is on screen. Psi can use two separate Psychic Attacks at once."
+        },
+        {
+            "level": 10,
+            "addAbility": "psionic-scream"
+        },
+        {
+            "level": 11,
+            "editItems": [
+                {
+                    "target": "psychic",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "vibrations",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Kill time is 0.1s per layer. Cannot take longer than 15s."
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "psychic-blast",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Stuns up to 50 Bloons in range for 4s, and Blimps for 1.5s. Pulses again after 2s, and another time after 4s."
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target Blimps. Psi can use two separate Psychic Attacks at once.",
+            "editItems": [
+                {
+                    "target": "psychic",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target BFBs, DDTs, ZOMGs, or BADs. Psi can use two separate Psychic Attacks at once.",
+            "editItems": [
+                {
+                    "target": "vibrations",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Kill time is 0.025s per layer. Takes twice as long on Super Ceramics. Cannot take longer than 15s."
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "editItems": [
+                {
+                    "target": "resonance",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target DDTs, ZOMGs, or BADs. Psi can use two separate Psychic Attacks at once.",
+            "editItems": [
+                {
+                    "target": "vibrations",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Kill time is 0.0167s per layer. Takes twice as long on Super Ceramics. Cannot take longer than 15s."
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target DDTs, ZOMGs, or BADs. Psi can use three separate Psychic Attacks at once."
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "psychic",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editItems": [
+                {
+                    "target": "resonance",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target BADs. Psi can use three separate Psychic Attacks at once.",
+            "editItems": [
+                {
+                    "target": "psionic-scream",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Attacks up to 2000 Bloons with a Psychic Attack."
+                }
+            ]
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
