@@ -1,0 +1,270 @@
+{
+    "hero": "Etienne",
+    "cost": 850,
+    "xpCurve": 1,
+    "footprintRadius": 7,
+    "range": 55,
+    "description": "Spawns one Drone subtower which can target Bloons in range.",
+    "projectiles": {
+        "dart": {
+            "displayName": "Drone Dart",
+            "dmgBase": 1,
+            "pierce": 2,
+            "attackRate": 0.7,
+            "damageType": "sharp",
+            "camo": false
+        },
+        "ucav-missile": {
+            "displayName": "UCAV Missile",
+            "dmgBase": 2,
+            "pierce": 25,
+            "attackRate": 0.6,
+            "projectiles": 10,
+            "damageType": "explosion",
+            "camo": true
+        },
+        "improved-ucav-missile": {
+            "displayName": "Improved UCAV Missile",
+            "dmgBase": 10,
+            "pierce": 30,
+            "attackRate": 0.6,
+            "projectiles": 10,
+            "damageType": "normal",
+            "camo": true
+        }
+    },
+    "abilities": {
+        "drone-swarm": {
+            "displayName": "Drone Swarm",
+            "cooldown": 50,
+            "duration": 17,
+            "addDurationPerLevel": 0.5,
+            "description": "Spawns 4 additional Drones: 1 on first, 1 on last, 2 on strong."
+        },
+        "ucav": {
+            "displayName": "UCAV",
+            "cooldown": 90,
+            "duration": 18,
+            "description": "UAV attacks with UCAV Missile.",
+            "emissions": ["ucav-missile"]
+        }
+    },
+    "supports": {
+        "uav": {
+            "displayName": "UAV Surveillance",
+            "target": "All towers on screen",
+            "buff": "Grants camo detection"
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttacks": ["dart"]
+        },
+        {
+            "level": 2,
+            "addRange": 5
+        },
+        {
+            "level": 3,
+            "addAbility": "drone-swarm"
+        },
+        {
+            "level": 4,
+            "editItems": [{
+                "target": "dart",
+                "item": "pierce",
+                "type": "add",
+                "value": 1
+            }]
+        },
+        {
+            "level": 5,
+            "editItems": [
+                {
+                    "target": "dart",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.7857
+                },
+                {
+                    "target": "dart",
+                    "item": "camo",
+                    "type": "replace",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "level": 6,
+            "editItems": [
+                {
+                    "target": "drone-swarm",
+                    "item": "cooldown",
+                    "type": "replace",
+                    "value": 55
+                }
+            ]
+        },
+        {
+            "level": 7,
+            "editDescription": "Spawns two Drone subtowers which can target Bloons in range. Divide and Conquer: 1 on first, 1 on strong."
+        },
+        {
+            "level": 8,
+            "addSupports": ["uav"]
+        },
+        {
+            "level": 9,
+            "editItems": [
+                {
+                    "target": "dart",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "addAbility": "ucav"
+        },
+        {
+            "level": 11,
+            "editDescription": "Spawns three Drone subtowers which can target Bloons in range. Divide and Conquer: 1 on first, 2 on strong. Zone Defense: 1 on first, 1 on strong, 1 on last."
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "dart",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [
+                {
+                    "target": "ucav",
+                    "item": "cooldown",
+                    "type": "replace",
+                    "value": 75
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "editItems": [
+                {
+                    "target": "dart",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "editItems": [
+                {
+                    "target": "ucav",
+                    "item": "duration",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "ucav-missile",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "ucav-missile",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "addRange": 20,
+            "editItems": [
+                {
+                    "target": "dart",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 3
+                },
+                {
+                    "target": "drone-swarm",
+                    "item": "cooldown",
+                    "type": "replace",
+                    "value": 50
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [
+                {
+                    "target": "ucav-missile",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "dart",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editDescription": "Spawns four Drone subtowers which can target Bloons in range. Divide and Conquer: 2 on first, 2 on strong. Zone Defense: 1 on first, 1 on strong, 1 on last, 1 on close."
+        },
+        {
+            "level": 20,
+            "addAttacks": ["ucav-missile"],
+            "editItems": [
+                {
+                    "target": "ucav-missile",
+                    "item": "dmgBase",
+                    "type": "replace",
+                    "value": 2
+                },
+                {
+                    "target": "ucav-missile",
+                    "item": "pierce",
+                    "type": "replace",
+                    "value": 25
+                },
+                {
+                    "target": "ucav",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "UAV attacks with Improved UCAV Missiles."
+                },
+                {
+                    "target": "ucav",
+                    "item": "emissions",
+                    "type": "replace",
+                    "value": ["improved-ucav-missile"]
+                }
+            ]
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
