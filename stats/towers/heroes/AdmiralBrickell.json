@@ -284,7 +284,6 @@
         },
         {
             "level": 19,
-            "addRange": 5,
             "editItems": [
                 {
                     "target": "naval-tactics",
