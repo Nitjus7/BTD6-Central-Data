@@ -18,6 +18,7 @@
             "displayName": "Machine Gun",
             "dmgBase": 1,
             "pierce": 1,
+            "attackRate": 0.1,
             "damageType": "sharp",
             "camo": false
         },
