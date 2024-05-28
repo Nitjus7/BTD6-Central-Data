@@ -254,6 +254,12 @@
                     "item": "description",
                     "type": "replace",
                     "value": "Takes away 1 life. Gives all towers in range 85% attack cooldown, +1 pierce, +25% range, +25% projectile speed, and camo detection. Wizards instead get 80% attack cooldown and +2 pierce."
+                },
+                {
+                    "target": "curse",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Removes Camo, Regrow, and Fortified properties from all Bloons, including DDTs."
                 }
             ]
         },
