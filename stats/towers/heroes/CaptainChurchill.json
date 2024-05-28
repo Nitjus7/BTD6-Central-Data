@@ -36,7 +36,7 @@
         "armor-piercing-shells": {
             "displayName": "Armor Piercing Shells",
             "cooldown": 30,
-            "duration": 10,
+            "duration": 8.5,
             "addDurationPerLevel": 0.5,
             "description": "Explosive Shell gets +3 bonus Ceramic damage, +3 bonus MOAB damage, can pop all bloon types, and can explode 2 additional times."
         },
