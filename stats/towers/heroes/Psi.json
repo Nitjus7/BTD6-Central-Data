@@ -119,7 +119,7 @@
         },
         {
             "level": 9,
-            "editDescription": "Psi attacks one Bloon at a time with each Psychic Attack, no matter where it is on screen. Psi can use two separate Psychic Attacks at once."
+            "editDescription": "Psi attacks one Bloon at a time with each Psychic Attack, no matter where it is on screen. Psi can use two separate Psychic Attacks at once. Cannot target Purples or Blimps."
         },
         {
             "level": 10,
@@ -155,7 +155,7 @@
         },
         {
             "level": 13,
-            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target Blimps. Psi can use two separate Psychic Attacks at once.",
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Psi can use two separate Psychic Attacks at once. Cannot target Blimps.",
             "editItems": [
                 {
                     "target": "psychic",
@@ -167,7 +167,7 @@
         },
         {
             "level": 14,
-            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target BFBs, DDTs, ZOMGs, or BADs. Psi can use two separate Psychic Attacks at once.",
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Psi can use two separate Psychic Attacks at once. Cannot target BFBs, DDTs, ZOMGs, or BADs.",
             "editItems": [
                 {
                     "target": "vibrations",
@@ -190,7 +190,7 @@
         },
         {
             "level": 16,
-            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target DDTs, ZOMGs, or BADs. Psi can use two separate Psychic Attacks at once.",
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Psi can use two separate Psychic Attacks at once. Cannot target DDTs, ZOMGs, or BADs.",
             "editItems": [
                 {
                     "target": "vibrations",
@@ -202,7 +202,7 @@
         },
         {
             "level": 17,
-            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target DDTs, ZOMGs, or BADs. Psi can use three separate Psychic Attacks at once."
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Psi can use three separate Psychic Attacks at once. Cannot target DDTs, ZOMGs, or BADs."
         },
         {
             "level": 18,
@@ -228,7 +228,7 @@
         },
         {
             "level": 20,
-            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Cannot target BADs. Psi can use three separate Psychic Attacks at once.",
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Psi can use three separate Psychic Attacks at once. Cannot target BADs.",
             "editItems": [
                 {
                     "target": "psionic-scream",
