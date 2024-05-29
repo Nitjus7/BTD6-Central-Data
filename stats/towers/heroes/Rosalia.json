@@ -3,7 +3,7 @@
     "cost": 875,
     "xpCurve": 1.425,
     "footprintRadius": 6,
-    "range": 50,
+    "range": 32,
     "description": "Rosalia can be moved anywhere on land within her 60 range workshop.",
     "projectiles": {
         "laser": {
