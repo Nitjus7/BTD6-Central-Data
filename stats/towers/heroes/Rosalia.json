@@ -60,7 +60,7 @@
             "pierce": 40,
             "damageType": "plasma",
             "camo": false,
-            "description": "Applies Laser Shock and Plasma Knockback on hit.",
+            "description": "+70 damage to Bloons with Laser Shock (including 3 - x - x Dartling). Applies Laser Shock and Plasma Knockback on hit.",
             "emissions": ["laser-shock", "plasma-knockback"]
         },
         "cluster-bombs": {
@@ -294,7 +294,7 @@
                     "target": "plasma",
                     "item": "description",
                     "type": "replace",
-                    "value": "Creates a Mini Knockback on each tick. +70 damage to Bloons with Laser Shock (including 3 - x - x Dartling). Creates a Plasma Explosion when expired."
+                    "value": "Creates a Mini Knockback on each tick. Creates a Plasma Explosion when expired."
                 },
                 {
                     "target": "grenade",
