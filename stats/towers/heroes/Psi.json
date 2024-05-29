@@ -127,18 +127,13 @@
         },
         {
             "level": 11,
+            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Psi can use two separate Psychic Attacks at once. Cannot target Blimps.",
             "editItems": [
                 {
                     "target": "psychic",
-                    "item": "pierce",
-                    "type": "add",
-                    "value": 1
-                },
-                {
-                    "target": "vibrations",
-                    "item": "description",
+                    "item": "damageType",
                     "type": "replace",
-                    "value": "Kill time is 0.1s per layer. Cannot take longer than 15s."
+                    "value": "normal"
                 }
             ]
         },
@@ -155,13 +150,18 @@
         },
         {
             "level": 13,
-            "editDescription": "Psi attacks one Bloon at a time with Psychic Attack, no matter where it is on screen. Psi can use two separate Psychic Attacks at once. Cannot target Blimps.",
             "editItems": [
                 {
                     "target": "psychic",
-                    "item": "damageType",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "vibrations",
+                    "item": "description",
                     "type": "replace",
-                    "value": "normal"
+                    "value": "Kill time is 0.1s per layer. Cannot take longer than 15s."
                 }
             ]
         },
