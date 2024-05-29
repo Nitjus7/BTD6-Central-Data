@@ -42,7 +42,7 @@
             "pierce": 25,
             "damageType": "plasma",
             "frequency": "Every 10th Laser",
-            "description": "+25 damage to Bloons with Laser Shock (including 2 - x - x Dartling), applies Laser Shock, and applies Knockback on hit.",
+            "description": "+25 damage to Bloons with Laser Shock (including 2 - x - x Dartling), applies Laser Shock, and applies Plasma Knockback on hit.",
             "camo": false,
             "emissions": ["laser-shock", "plasma-knockback"]
         },
@@ -60,6 +60,7 @@
             "pierce": 40,
             "damageType": "plasma",
             "camo": false,
+            "description": "Applies Laser Shock and Plasma Knockback on hit.",
             "emissions": ["laser-shock", "plasma-knockback"]
         },
         "cluster-bombs": {
