@@ -123,7 +123,7 @@
     [
         {
             "name": "Submerged: Hero Buff",
-            "description": "Heroes in range get 5x damage, 3x pierce, and 5x Hero XP, but attack 50% slower."
+            "description": "Heroes in range get 5x damage, 3x pierce, and 5x Hero XP, but have a 30% increased attack cooldown."
         },
         {
             "name": "Submerged: Monkey Sub Buff",
