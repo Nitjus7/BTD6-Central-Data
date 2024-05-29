@@ -111,7 +111,7 @@
             "displayName": "Kinetic Charge",
             "cooldown": 75,
             "duration": 10,
-            "description": "Creates a Kinetic Bomb on a targeted Blimp on screen. Bomb instantly explodes when the target takes 6000 damage.",
+            "description": "Creates a Kinetic Bomb on a targeted Blimp on screen.",
             "emissions": ["kinetic-bomb"]
         }
     },
