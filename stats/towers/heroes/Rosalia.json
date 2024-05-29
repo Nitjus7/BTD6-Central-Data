@@ -98,7 +98,8 @@
         "scatter-missile": {
             "displayName": "Scatter Missile",
             "cooldown": 60,
-            "description": "Creates a 40 range Scatter Missile Area that follows the targeted Bloon until it pops, firing 20 Missiles."
+            "description": "Creates a 40 range Scatter Missile Area that follows the targeted Bloon until it pops, firing 20 Missiles.",
+            "emissions": ["missile"]
         },
         "flight-boost": {
             "displayName": "Flight Boost",
