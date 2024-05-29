@@ -37,19 +37,19 @@
         "name": "Radial Darts",
         "type": "attack",
         "dmg": {
-            "base": 200,
-            "bonusBoss": 200
+            "base": 300,
+            "bonusBoss": 300
         },
         "pierce": 50,
         "rate": 0.66,
-        "projectiles": 16
+        "projectiles": 12
     },
     {
         "name": "Forward-Firing Darts",
         "type": "attack",
         "dmg": {
-            "base": 300,
-            "bonusBoss": 300
+            "base": 150,
+            "bonusBoss": 150
         },
         "pierce": 50,
         "rate": 0.11,
@@ -60,12 +60,12 @@
         "name": "Heat-Seeking Missiles",
         "type": "attack",
         "dmg": {
-            "base": 200,
-            "bonusBoss": 200
+            "base": 300,
+            "bonusBoss": 300
         },
         "pierce": 1,
         "rate": 0.66,
-        "projectiles": 4,
+        "projectiles": 8,
         "emits": [
             {
                 "name": "Missile Explosion",
