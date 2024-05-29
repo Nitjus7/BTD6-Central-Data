@@ -1,0 +1,467 @@
+{
+    "hero": "Rosalia",
+    "cost": 875,
+    "xpCurve": 1.425,
+    "footprintRadius": 6,
+    "range": 50,
+    "description": "Rosalia can be moved anywhere on land within her 60 range workshop.",
+    "projectiles": {
+        "laser": {
+            "displayName": "Laser Gun",
+            "dmgBase": 3,
+            "pierce": 3,
+            "attackRate": 1,
+            "damageType": "energy",
+            "camo": false
+        },
+        "grenade": {
+            "displayName": "Grenade",
+            "dmgBase": 2,
+            "pierce": 8,
+            "attackRate": 1,
+            "damageType": "explosion",
+            "camo": false
+        },
+        "missile": {
+            "displayName": "Missile",
+            "dmgBase": 5,
+            "pierce": 50,
+            "attackRate": 0.24,
+            "blastRadius": 18,
+            "damageType": "explosion",
+            "camo": false,
+            "emissions": ["missile-stun"]
+        },
+        "adrenaline-rush": {
+            "displayName": "Adrenaline Rush",
+            "description": "Gets +1% attack speed per 2 Bloons within the Workshop's range. Max +20% attack speed."
+        },
+        "plasma": {
+            "displayName": "Plasma",
+            "dmgBase": 12,
+            "pierce": 25,
+            "damageType": "plasma",
+            "frequency": "Every 10th Laser",
+            "description": "+25 damage to Bloons with Laser Shock (including 2 - x - x Dartling), applies Laser Shock, and applies Knockback on hit.",
+            "camo": false,
+            "emissions": ["laser-shock", "plasma-knockback"]
+        },
+        "kinetic-bomb": {
+            "displayName": "Kinetic Bomb",
+            "dmgBase": 1500,
+            "pierce": 100,
+            "damageType": "explosion",
+            "special": "Kinetic Bomb deals +1 damage per damage the target takes. Max 4500 damage. Bomb instantly explodes when the target takes 6000 damage.",
+            "camo": false
+        },
+        "plasma-explosion": {
+            "displayName": "Plasma Explosion",
+            "dmgBase": 70,
+            "pierce": 40,
+            "damageType": "plasma",
+            "camo": false,
+            "emissions": ["laser-shock", "plasma-knockback"]
+        },
+        "cluster-bombs": {
+            "displayName": "Cluster Bombs",
+            "dmgBase": 2,
+            "pierce": 5,
+            "projectiles": 3,
+            "damageType": "explosion",
+            "camo": false
+        }
+    },
+    "statuses": {
+        "missile-stun": {
+            "displayName": "Missile Stun",
+            "duration": 1,
+            "description": "Can't affect Blimps."
+        },
+        "laser-shock": {
+            "displayName": "Laser Shock",
+            "dmgBase": 3,
+            "tickRate": 0.95,
+            "duration": 9
+        },
+        "plasma-knockback": {
+            "displayName": "Plasma Knockback",
+            "duration": 0.5,
+            "description": "-800% speed to Bloons, -500% speed to Blimps, -300% speed to Leads and Ceramics."
+        }
+    },
+    "abilities": {
+        "scatter-missile": {
+            "displayName": "Scatter Missile",
+            "cooldown": 60,
+            "description": "Creates a 40 range Scatter Missile Area that follows the targeted Bloon until it pops, firing 20 Missiles."
+        },
+        "flight-boost": {
+            "displayName": "Flight Boost",
+            "cooldown": 45,
+            "duration": 20,
+            "description": "Rosalia and nearby Helis and Aces move 30% faster. Rosalia attacks with both Laser and Grenade at the same time and has unlimited range pursuit."
+        },
+        "kinetic-charge": {
+            "displayName": "Kinetic Charge",
+            "cooldown": 75,
+            "duration": 10,
+            "description": "Creates a Kinetic Bomb on a targeted Blimp on screen. Bomb instantly explodes when the target takes 6000 damage.",
+            "emissions": ["kinetic-bomb"]
+        }
+    },
+    "supports": {
+        "aircraft-efficiency": {
+            "displayName": "Aircraft Efficiency",
+            "target": "Aces and Heli Pilots within range of Rosalia's Workshop",
+            "buff": "5% discount on all upgrades"
+        },
+        "guardian-automation": {
+            "displayName": "Guardian Automation",
+            "target": "The Anti-Bloon",
+            "buff": "30% discount on the upgrade"
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttacks": ["laser"]
+        },
+        {
+            "level": 2,
+            "addAttacks": ["grenade"],
+            "editDescription": "Rosalia can be moved anywhere on land within her 60 range workshop. Can swap between using Grenade and Laser attacks with a 2 second cooldown."
+        },
+        {
+            "level": 3,
+            "addAbility": "scatter-missile"
+        },
+        {
+            "level": 4,
+            "addAttacks": ["adrenaline-rush"]
+        },
+        {
+            "level": 5,
+            "editItems": [
+                {
+                    "target": "laser",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "laser",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 3
+                }
+            ],
+            "addProperties": [
+                {
+                    "target": "laser",
+                    "key": "emissions",
+                    "value": ["plasma"]
+                },
+                {
+                    "target": "laser",
+                    "key": "description",
+                    "value": "Every 10th shot is replaced by Plasma."
+                },
+                {
+                    "target": "grenade",
+                    "key": "description",
+                    "value": "Can explode 3 times, bouncing to nearby targets. Gets +2 projectiles every 10th shot."
+                }
+            ]
+        },
+        {
+            "level": 6,
+            "addSupports": ["aircraft-efficiency"]
+        },
+        {
+            "level": 7,
+            "editFootprint": 0,
+            "editDescription": "Rosalia can be moved anywhere within her 60 range workshop. Can swap between using Grenade and Laser attacks with a 2 second cooldown.",
+            "addAbility": "flight-boost"
+        },
+        {
+            "level": 8,
+            "addProperties": [{
+                "target": "laser",
+                "key": "dmgBonusMOAB",
+                "value": 5
+            }],
+            "editItems": [{
+                "target": "grenade",
+                "item": "dmgBase",
+                "type": "add",
+                "value": 1
+            }]
+        },
+        {
+            "level": 9,
+            "editItems": [
+                {
+                    "target": "scatter-missile",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Creates a 40 range Scatter Missile Area that follows the targeted Bloon until it pops, firing 30 Missiles."
+                }
+            ]
+        },
+        {
+            "level": 10,
+            "addAbility": "kinetic-charge"
+        },
+        {
+            "level": 11,
+            "editItems": [
+                {
+                    "target": "adrenaline-rush",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Gets +1% attack speed per 2 Bloons within the Workshop's range. Max +30% attack speed."
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "editItems": [
+                {
+                    "target": "laser",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 5
+                },
+                {
+                    "target": "grenade",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Can explode 4 times, bouncing to nearby targets. Gets +2 projectiles every 10th shot."
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [
+                {
+                    "target": "laser",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 4
+                },
+                {
+                    "target": "laser",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 5
+                },
+                {
+                    "target": "laser",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "plasma"
+                },
+                {
+                    "target": "laser",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Every 10th shot is replaced by Plasma. Slightly pushes back up to Ceramics on each hit."
+                },
+                {
+                    "target": "plasma",
+                    "item": "dmgBase",
+                    "type": "replace",
+                    "value": 0
+                },
+                {
+                    "target": "plasma",
+                    "item": "pierce",
+                    "type": "replace",
+                    "value": 200
+                },
+                {
+                    "target": "plasma",
+                    "item": "emissions",
+                    "type": "replace",
+                    "value": ["plasma-explosion"]
+                },
+                {
+                    "target": "plasma",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "+70 damage to Bloons with Laser Shock (including 3 - x - x Dartling). Creates a Plasma Explosion when expired."
+                },
+                {
+                    "target": "grenade",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "grenade",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Can explode 4 times, bouncing to nearby targets and creating Cluster Bombs on each hit. Gets +2 projectiles every 10th shot."
+                }
+            ],
+            "addProperties": [
+                {
+                    "target": "grenade",
+                    "key": "emissions",
+                    "value": ["cluster-bombs"]
+                },
+                {
+                    "target": "plasma",
+                    "key": "tickRate",
+                    "value": 0.1
+                },
+                {
+                    "target": "plasma",
+                    "key": "lifespan",
+                    "value": 0.6
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "editItems": [
+                {
+                    "target": "missile",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 5
+                },
+                {
+                    "target": "missile",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "editItems": [
+                {
+                    "target": "laser",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 10
+                },
+                {
+                    "target": "grenade",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Can explode 4 times, bouncing to nearby targets and creating Cluster Bombs on each hit. Gets +4 projectiles every 10th shot."
+                }
+            ],
+            "addProperties": [
+                {
+                    "target": "grenade",
+                    "key": "dmgBonusCeram",
+                    "value": 4
+                },
+                {
+                    "target": "cluster-bombs",
+                    "key": "dmgBonusCeram",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "editItems": [
+                {
+                    "target": "scatter-missile",
+                    "item": "cooldown",
+                    "type": "replace",
+                    "value": 45
+                },
+                {
+                    "target": "kinetic-charge",
+                    "item": "cooldown",
+                    "type": "replace",
+                    "value": 60
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [
+                {
+                    "target": "adrenaline-rush",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Gets +1% attack speed per 2 Bloons within the Workshop's range. Max +40% attack speed."
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "editItems": [
+                {
+                    "target": "flight-boost",
+                    "item": "cooldown",
+                    "type": "replace",
+                    "value": 25
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "editItems": [
+                {
+                    "target": "laser",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 5
+                },
+                {
+                    "target": "laser",
+                    "item": "dmgBonusMOAB",
+                    "type": "add",
+                    "value": 10
+                },
+                {
+                    "target": "cluster-bombs",
+                    "item": "projectiles",
+                    "type": "add",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "addSupports": ["guardian-automation"],
+            "editItems": [
+                {
+                    "target": "scatter-missile",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Creates a 40 range Scatter Missile Area that follows the targeted Bloon until it pops, firing 90 Missiles."
+                },
+                {
+                    "target": "missile",
+                    "item": "attackRate",
+                    "type": "replace",
+                    "value": 0.08
+                },
+                {
+                    "target": "kinetic-bomb",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 2500
+                },
+                {
+                    "target": "kinetic-bomb",
+                    "item": "special",
+                    "type": "replace",
+                    "value": "Kinetic Bomb deals +1 damage per damage the target takes. Max 12000 damage. Bomb instantly explodes when the target takes 16000 damage."
+                }
+            ]
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
