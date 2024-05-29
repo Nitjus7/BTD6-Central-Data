@@ -278,7 +278,7 @@
                     "target": "mega-mine-ability",
                     "item": "cooldown",
                     "type": "subtract",
-                    "value": 5
+                    "value": 10
                 }
             ]
         },
