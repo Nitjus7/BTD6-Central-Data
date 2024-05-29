@@ -142,6 +142,12 @@
                     "item": "description",
                     "type": "replace",
                     "value": "Bloons in range move at 60% speed. Blimps in range move at 80% speed."
+                },
+                {
+                    "target": "natures-wrath-buff",
+                    "item": "buff",
+                    "type": "replace",
+                    "value": "+1 pierce, camo detection"
                 }
             ]
         },
@@ -168,7 +174,7 @@
                     "target": "natures-wrath-buff",
                     "item": "buff",
                     "type": "replace",
-                    "value": "+3 pierce, +5 range"
+                    "value": "+3 pierce, +5 range, camo detection"
                 }
             ],
             "addSupports": ["natures-clarity-buff"]
