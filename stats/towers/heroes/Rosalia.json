@@ -88,6 +88,10 @@
             "displayName": "Plasma Knockback",
             "duration": 0.5,
             "description": "-800% speed to Bloons, -500% speed to Blimps, -300% speed to Leads and Ceramics."
+        },
+        "mini-knockback": {
+            "displayName": "Mini Knockback",
+            "description": "Regular Bloons and DDTs are pushed back 10 units. MOABs and BFBs are pushed back 5 units. Doesn't affect ZOMGs or BADs."
         }
     },
     "abilities": {
@@ -284,13 +288,13 @@
                     "target": "plasma",
                     "item": "emissions",
                     "type": "replace",
-                    "value": ["plasma-explosion"]
+                    "value": ["mini-knockback", "plasma-explosion"]
                 },
                 {
                     "target": "plasma",
                     "item": "description",
                     "type": "replace",
-                    "value": "+70 damage to Bloons with Laser Shock (including 3 - x - x Dartling). Creates a Plasma Explosion when expired."
+                    "value": "Knocks back Bloons on each tick. +70 damage to Bloons with Laser Shock (including 3 - x - x Dartling). Creates a Plasma Explosion when expired."
                 },
                 {
                     "target": "grenade",
