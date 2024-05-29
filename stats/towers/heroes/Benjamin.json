@@ -67,7 +67,7 @@
         },
         {
             "level": 4,
-            "addSupports": ["skimming"]
+            "addSupports": ["cyber-security"]
         },
         {
             "level": 5,
@@ -75,7 +75,7 @@
         },
         {
             "level": 6,
-            "addSupports": ["cyber-security"]
+            "addSupports": ["skimming"]
         },
         {
             "level": 7,
