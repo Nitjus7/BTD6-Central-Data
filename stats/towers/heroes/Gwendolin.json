@@ -28,7 +28,7 @@
             "pierce": 100,
             "damageType": "fire",
             "camo": false,
-            "frequency": "Fires after every 40 shots. Cannot fire more than once per 4.5sec.",
+            "frequency": "Fires after every 40 shots. Cannot fire more than once per 1.5sec.",
             "description": "Applies a Heat it Up Buff to all towers in range.", 
             "emissions": ["heat-it-up-buff"]
         }
