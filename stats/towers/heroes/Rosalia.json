@@ -294,7 +294,7 @@
                     "target": "plasma",
                     "item": "description",
                     "type": "replace",
-                    "value": "Knocks back Bloons on each tick. +70 damage to Bloons with Laser Shock (including 3 - x - x Dartling). Creates a Plasma Explosion when expired."
+                    "value": "Creates a Mini Knockback on each tick. +70 damage to Bloons with Laser Shock (including 3 - x - x Dartling). Creates a Plasma Explosion when expired."
                 },
                 {
                     "target": "grenade",
