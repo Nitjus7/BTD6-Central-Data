@@ -38,8 +38,7 @@
         "rapid-shot": {
             "displayName": "Rapid Shot",
             "cooldown": 60,
-            "duration": 2,
-            "addDurationPerLevel": 0.5,
+            "duration": 8,
             "description": "The Arrow attack cooldown is reduced to 33%."
         },
         "storm-of-arrows": {
@@ -151,7 +150,15 @@
         },
         {
             "level": 13,
-            "addRange": 2
+            "addRange": 2,
+            "editItems": [
+                {
+                    "target": "rapid-shot",
+                    "item": "duration",
+                    "type": "replace",
+                    "value": 12
+                }
+            ]
         },
         {
             "level": 14,
