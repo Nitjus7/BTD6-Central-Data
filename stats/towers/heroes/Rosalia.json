@@ -336,14 +336,13 @@
                     "item": "dmgBase",
                     "type": "add",
                     "value": 5
-                },
-                {
-                    "target": "missile",
-                    "item": "dmgBonusMOAB",
-                    "type": "add",
-                    "value": 5
                 }
-            ]
+            ],
+            "addProperties": [{
+                "target": "missile",
+                "key": "dmgBonusMOAB",
+                "value": 5
+            }]
         },
         {
             "level": 15,
