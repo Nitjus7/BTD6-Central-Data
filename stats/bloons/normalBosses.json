@@ -212,7 +212,7 @@
       "speed": 0.06,
       "onSkull": {
         "name": "Dreadrock Bloons",
-        "health": 5000,
+        "health": 9000,
         "lifeLossOnLeak": 20
       }
     },
@@ -222,7 +222,7 @@
       "speed": 0.06,
       "onSkull": {
         "name": "Dreadrock Bloons",
-        "health": 12000,
+        "health": 22500,
         "lifeLossOnLeak": 25
       }
     }
