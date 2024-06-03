@@ -25,14 +25,14 @@
       "tier": 4,
       "health": 8000000,
       "speed": 0.06,
-      "passive": "12 MOABs",
+      "passive": "8 MOABs, 2 BFBs",
       "skullSpawns": "2 fortified BADs, 20 fortified DDTs, 100 Regrow Fortified Ceramic Bloons"
     },
     {
       "tier": 5,
       "health": 40000000,
       "speed": 0.06,
-      "passive": "8 DDTs",
+      "passive": "6 DDTs, 2 fortified ZOMGs",
       "skullSpawns": "4 fortified BADs, 30 MOABs"
     }
   ],
@@ -239,7 +239,7 @@
         },
         {
           "name": "the shield thing I guess I'll call it reality shield",
-          "speedBonusPercent": 50
+          "speedBonusPercent": 45
         }
       ]
     },
@@ -254,7 +254,7 @@
         },
         {
           "name": "the shield thing I guess I'll call it reality shield",
-          "speedBonusPercent": 55
+          "speedBonusPercent": 50
         }
       ]
     },
@@ -269,7 +269,7 @@
         },
         {
           "name": "the shield thing I guess I'll call it reality shield",
-          "speedBonusPercent": 60
+          "speedBonusPercent": 55
         }
       ]
     },
@@ -284,7 +284,7 @@
         },
         {
           "name": "the shield thing I guess I'll call it reality shield",
-          "speedBonusPercent": 65
+          "speedBonusPercent": 60
         }
       ]
     },
@@ -299,7 +299,7 @@
         },
         {
           "name": "the shield thing I guess I'll call it reality shield",
-          "speedBonusPercent": 70
+          "speedBonusPercent": 65
         }
       ]
     }
