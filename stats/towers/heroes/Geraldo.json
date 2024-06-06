@@ -1,0 +1,592 @@
+{
+    "hero": "Geraldo",
+    "cost": 700,
+    "xpCurve": 1,
+    "footprintRadius": 7,
+    "range": 40,
+    "projectiles": {
+        "lightning": {
+            "displayName": "Lightning",
+            "dmgBase": 1,
+            "pierce": 5,
+            "attackRate": 1.1,
+            "damageType": "energy",
+            "camo": false
+        },
+        "dart": {
+            "displayName": "Turret Dart",
+            "dmgBase": 2,
+            "pierce": 10,
+            "attackRate": 1.5,
+            "damageType": "sharp",
+            "camo": false
+        },
+        "nails": {
+            "displayName": "Nails",
+            "dmgBase": 1,
+            "pierce": 10,
+            "damageType": "sharp",
+            "camo": true
+        },
+        "glue-puddle": {
+            "displayName": "Glue Puddle",
+            "pierce": 100,
+            "duration": 30,
+            "description": "Bloons that pass over this get Glued. Cannot affect Blimps.",
+            "emissions": ["glued"]
+        },
+        "maelstrom": {
+            "displayName": "Maelstrom",
+            "pierce": 200,
+            "dmgBase": 1,
+            "attackRate": 0.045,
+            "projectiles": 2,
+            "duration": 3,
+            "damageType": "sharp",
+            "camo": false,
+            "description": "Fires blades clockwise for the duration."
+        },
+        "flame": {
+            "displayName": "Gerry's Flame",
+            "pierce": 4,
+            "dmgBase": 1,
+            "attackRate": 0.1,
+            "damageType": "fire",
+            "camo": false,
+            "emissions": ["burn"]
+        },
+        "wererabbit": {
+            "displayName": "Wererabbit Swipe",
+            "pierce": 15,
+            "dmgBase": 10,
+            "dmgBonusCeram": 30,
+            "dmgBonusMOAB": 30,
+            "attackRate": 0.8,
+            "range": 80,
+            "damageType": "normal",
+            "description": "Gets +1 damage per 2250 RBE on screen. Max +40 damage.",
+            "camo": true
+        },
+        "magic-ball": {
+            "displayName": "Magic Ball",
+            "pierce": 5,
+            "dmgBase": 20,
+            "attackRate": 0.2,
+            "range": 80,
+            "damageType": "plasma",
+            "camo": true
+        },
+        "explosion": {
+            "displayName": "Nail Mine Explosion",
+            "pierce": 40,
+            "dmgBase": 10,
+            "damageType": "explosion",
+            "camo": true,
+            "emissions": ["explosion-burn"]
+        }
+    },
+    "statuses": {
+        "mindbend": {
+            "displayName": "Mindbend",
+            "description": "Every 4th bloon that passes through its range is knocked back 100-200 units. Ignores Blimps.",
+            "damageType": "normal",
+            "camo": false
+        },
+        "glued": {
+            "displayName": "Glued Status",
+            "description": "Affected Bloons move at 50% speed. Soaks through all Bloon layers."
+        },
+        "hot-sauce-burn": {
+            "displayName": "Hot Sauce Burn",
+            "dmgBase": 1,
+            "tickRate": 1.5,
+            "duration": 3
+        },
+        "explosion-burn": {
+            "displayName": "Nail Mine Explosion Burn",
+            "dmgBase": 1,
+            "tickRate": 2,
+            "duration": 4
+        },
+        "mystical-shroud": {
+            "displayName": "Mystical Shroud",
+            "pierce": 50,
+            "description": "On pop, explodes with 1% damage (10% to Blimps) of this Blimp's base HP. MOABs and BFBs use 2 pierce, ZOMGs and DDTs use 4 pierce, BADs use 10 pierce."
+        }
+    },
+    "supports": {
+        "pickled": {
+            "displayName": "Pickled",
+            "target": "A selected tower",
+            "buff": "+1 damage, but 33% longer attack cooldown"
+        },
+        "sharpened": {
+            "displayName": "Sharpened",
+            "target": "All Sharp attacks",
+            "buff": "+1 pierce"
+        }
+    },
+    "store": {
+        "shooty-turret": {
+            "displayName": "Shooty Turret",
+            "icon": "",
+            "cost": 250,
+            "range": 50,
+            "refreshRounds": 5,
+            "maxStock": 4,
+            "footprintRadius": 3,
+            "durationRounds": null,
+            "description": "Places a dart-shooting turret anywhere on land.",
+            "hasAttacks": ["dart"],
+            "unlockLevel": 1
+        },
+        "stack-of-nails": {
+            "displayName": "Stack of Old Nails",
+            "icon": "",
+            "cost": 50,
+            "range": 50,
+            "refreshRounds": 1,
+            "maxStock": 10,
+            "durationRounds": null,
+            "description": "Places a stack of nails anywhere on the track.",
+            "hasAttacks": ["nails"],
+            "unlockLevel": 1
+        },
+        "creepy-idol": {
+            "displayName": "Creepy Idol",
+            "icon": "",
+            "cost": 100,
+            "range": 32,
+            "refreshRounds": 4,
+            "maxStock": 2,
+            "footprintRadius": 3,
+            "durationRounds": 4,
+            "description": "Places a Creepy Idol anywhere on land.",
+            "hasStatuses": ["mindbend"],
+            "unlockLevel": 1
+        },
+        "jar-of-pickles": {
+            "displayName": "Jar of Pickles",
+            "icon": "",
+            "cost": 100,
+            "refreshRounds": 4,
+            "maxStock": 4,
+            "durationRounds": 5,
+            "description": "Gives a selected Monkey with an attack a buff.",
+            "hasSupports": ["pickled"],
+            "unlockLevel": 1
+        },
+        "quincy-action-figure": {
+            "displayName": "Rare Quincy Action Figure",
+            "icon": "",
+            "cost": 650,
+            "refreshRounds": 4,
+            "maxStock": 1,
+            "footprintRadius": 3,
+            "durationRounds": null,
+            "description": "Places a Quincy Action Figure that gets more valuable the longer it's been available in the shop.",
+            "special": "Sell value starts at 95%. Increases by 10% each round from Rounds 1-30, 5% for Rounds 31-80, and 2% for Rounds 81+.",
+            "unlockLevel": 2
+        },
+        "see-invisibility-potion": {
+            "displayName": "See Invisibility Potion",
+            "icon": "",
+            "cost": 200,
+            "refreshRounds": 10,
+            "maxStock": 2,
+            "durationRounds": 10,
+            "description": "Gives a selected Monkey camo detection.",
+            "unlockLevel": 3
+        },
+        "tube-of-amaz-o-glue": {
+            "displayName": "Tube of Amaz-o-Glue",
+            "icon": "",
+            "cost": 100,
+            "refreshRounds": 3,
+            "maxStock": 3,
+            "description": "Creates a Glue Puddle anywhere on the track.",
+            "hasAttacks": ["glue-puddle"],
+            "unlockLevel": 4
+        },
+        "sharpening-stone": {
+            "displayName": "Sharpening Stone",
+            "icon": "",
+            "cost": 200,
+            "refreshRounds": 5,
+            "maxStock": 3,
+            "durationRounds": 10,
+            "description": "Gives a selected Monkey with a sharp attack a buff.",
+            "hasSupports": ["sharpened"],
+            "unlockLevel": 5
+        },
+        "worn-heros-cape": {
+            "displayName": "Worn Hero's Cape",
+            "icon": "",
+            "cost": 1500,
+            "refreshRounds": 5,
+            "maxStock": 2,
+            "durationRounds": null,
+            "description": "Transforms a selected Dart Monkey into a 0-0-0 Super Monkey which can only be upgraded to Tier 3 at most.",
+            "unlockLevel": 6
+        },
+        "blade-trap": {
+            "displayName": "Blade Trap",
+            "icon": "",
+            "cost": 650,
+            "refreshRounds": 5,
+            "maxStock": 4,
+            "durationRounds": null,
+            "description": "Places a Blade Trap anywhere on the track that fires a Maelstrom when a Bloon passes over it.",
+            "hasAttacks": ["maelstrom"],
+            "unlockLevel": 7
+        },
+        "hot-sauce": {
+            "displayName": "Bottle of 'Gerry's Fire' Hot Sauce",
+            "icon": "",
+            "cost": 500,
+            "refreshRounds": 2,
+            "maxStock": 3,
+            "durationRounds": 5,
+            "range": 50,
+            "description": "Targeted tower gets an orbiting Demon that shoots fire at nearby Bloons.",
+            "hasAttacks": ["flame"],
+            "unlockLevel": 8
+        },
+        "fertilizer": {
+            "displayName": "Fertilizer",
+            "icon": "",
+            "cost": 300,
+            "refreshRounds": 3,
+            "maxStock": 4,
+            "durationRounds": 4,
+            "description": "Selected Banana Farm gets +20% income.",
+            "unlockLevel": 9
+        },
+        "pet-rabbit": {
+            "displayName": "Pet Rabbit",
+            "icon": "",
+            "cost": 1500,
+            "refreshRounds": 3,
+            "maxStock": 2,
+            "durationRounds": null,
+            "description": "Does nothing.",
+            "special": "When 4 Pet Rabbits are bought, they fuse into a Wererabbit.",
+            "hasAttacks": ["wererabbit"],
+            "unlockLevel": 10
+        },
+        "rejuv-potion": {
+            "displayName": "Rejuv Potion",
+            "icon": "",
+            "cost": 2000,
+            "refreshRounds": 5,
+            "maxStock": 2,
+            "description": "Resets all Ability cooldowns and gives +50 lives. Cannot go above starting lives.",
+            "unlockLevel": 11
+        },
+        "genie-bottle": {
+            "displayName": "Genie Bottle",
+            "icon": "",
+            "cost": 2000,
+            "range": 100,
+            "refreshRounds": 5,
+            "maxStock": 2,
+            "footprintRadius": 3,
+            "durationRounds": 2,
+            "description": "Creates a Genie flying in a centered figure 8 pattern.",
+            "hasAttacks": ["magic-ball"],
+            "unlockLevel": 12
+        },
+        "paragon-power-totem": {
+            "displayName": "Paragon Power Totem",
+            "icon": "",
+            "cost": 26000,
+            "refreshRounds": 1,
+            "maxStock": 2,
+            "durationRounds": null,
+            "description": "Adds 2000 power to the next Paragon purchased.",
+            "unlockLevel": 20
+        }
+    },
+    "levels": [
+        {
+            "level": 1,
+            "addAttacks": ["lightning"]
+        },
+        {
+            "level": 2,
+            "description": "Adds Rare Quincy Action Figure to the shop."
+        },
+        {
+            "level": 3,
+            "description": "Adds See Invisibility Potion to the shop.",
+            "addRange": 5
+        },
+        {
+            "level": 4,
+            "description": "Adds Tube of Amaz-o-Glue to the shop."
+        },
+        {
+            "level": 5,
+            "editItems": [
+                {
+                    "target": "lightning",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.909
+                }
+            ],
+            "description": "Adds Sharpening Stone to the shop."
+        },
+        {
+            "level": 6,
+            "description": "Adds Worn Hero's Cape to the shop."
+        },
+        {
+            "level": 7,
+            "editItems": [
+                {
+                    "target": "lightning",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "lightning",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 5
+                }
+            ],
+            "description": "Adds Blade Trap to the shop."
+        },
+        {
+            "level": 8,
+            "description": "Adds 'Gerry's Fire' Hot Sauce to the shop."
+        },
+        {
+            "level": 9,
+            "description": "Adds Fertilizer to the shop. Lightning gets a bigger explosion radius."
+        },
+        {
+            "level": 10,
+            "description": "Adds Pet Rabbit to the shop."
+        },
+        {
+            "level": 11,
+            "addRange": 3,
+            "description": "Adds Rejuv Potion to the shop.",
+            "editItems": [
+                {
+                    "target": "lightning",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "level": 12,
+            "description": "Adds Genie Bottle to the shop.",
+            "editItems": [
+                {
+                    "target": "mindbend",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Every 4th bloon that passes through its range is knocked back 100-200 units. Every 4th visible Blimp instead briefly cannot move (this is not a stun)."
+                }
+            ]
+        },
+        {
+            "level": 13,
+            "editItems": [
+                {
+                    "target": "dart",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 4
+                },
+                {
+                    "target": "nails",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "level": 14,
+            "editStore": [
+                {
+                    "store-item": "see-invisiblity-potion",
+                    "target": "durationRounds",
+                    "type": "add",
+                    "value": 5
+                },
+                {
+                    "store-item": "see-invisiblity-potion",
+                    "target": "description",
+                    "type": "replace",
+                    "value": "Gives a selected Monkey camo detection and +20% range."
+                }
+            ]
+        },
+        {
+            "level": 15,
+            "editItems": [
+                {
+                    "target": "sharpened",
+                    "item": "buff",
+                    "type": "replace",
+                    "value": "+2 pierce"
+                },
+                {
+                    "target": "maelstrom",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "maelstrom",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 300
+                },
+                {
+                    "target": "maelstrom",
+                    "item": "projectiles",
+                    "type": "add",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "level": 16,
+            "editItems": [
+                {
+                    "target": "nails",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 14
+                },
+                {
+                    "target": "nails",
+                    "item": "damageType",
+                    "type": "replace",
+                    "value": "normal"
+                },
+                {
+                    "target": "hot-sauce-burn",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 2
+                },
+                {
+                    "target": "pickled",
+                    "item": "buff",
+                    "type": "replace",
+                    "value": "+1 damage and +1 bonus Fortified damage, but 33% longer attack cooldown"
+                }
+            ],
+            "addProperties": [
+                {
+                    "target": "nails",
+                    "key": "emissions",
+                    "value": ["explosion"]
+                }
+            ]
+        },
+        {
+            "level": 17,
+            "editItems": [
+                {
+                    "target": "lightning",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "glue-puddle",
+                    "item": "description",
+                    "type": "replace",
+                    "value": "Bloons that pass over this get Glued. MOABs use 5p, BFBs and DDTs 10p, ZOMGs 25p."
+                }
+            ]
+        },
+        {
+            "level": 18,
+            "addProperties": [
+                {
+                    "target": "magic-ball",
+                    "key": "dmgBonusMOAB",
+                    "value": 5
+                },
+                {
+                    "target": "magic-ball",
+                    "key": "projectiles",
+                    "value": 2
+                }
+            ],
+            "editStore": [
+                {
+                    "store-item": "creepy-idol",
+                    "target": "hasStatuses",
+                    "type": "replace",
+                    "value": ["mindbend", "mystical-shroud"]
+                },
+                {
+                    "store-item": "creepy-idol",
+                    "target": "description",
+                    "type": "replace",
+                    "value": "Places a Creepy Idol anywhere on land. When Creepy Idol is sold, applies Mystical Shroud on up to 3 nearby Blimps."
+                }
+            ]
+        },
+        {
+            "level": 19,
+            "addRange": 3,
+            "editItems": [
+                {
+                    "target": "lightning",
+                    "item": "attackRate",
+                    "type": "multiply",
+                    "value": 0.8
+                },
+                {
+                    "target": "lightning",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 1
+                },
+                {
+                    "target": "lightning",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 5
+                }
+            ],
+            "editStore": [
+                {
+                    "store-item": "see-invisiblity-potion",
+                    "target": "description",
+                    "type": "replace",
+                    "value": "Gives a selected Monkey camo detection, +20% range, and +1 bonus Camo damage."
+                }
+            ]
+        },
+        {
+            "level": 20,
+            "editItems": [
+                {
+                    "target": "lightning",
+                    "item": "dmgBase",
+                    "type": "add",
+                    "value": 5
+                }
+            ],
+            "description": "Adds Paragon Power Totem to the shop."
+        }
+    ],
+    "enabledProjectiles": [],
+    "enabledAbilities": [],
+    "enabledSupports": []
+}
