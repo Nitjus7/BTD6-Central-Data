@@ -4,6 +4,7 @@
     "xpCurve": 1,
     "footprintRadius": 7,
     "range": 40,
+    "description": "Geraldo has a shop! View it in the bottom right.",
     "projectiles": {
         "lightning": {
             "displayName": "Lightning",
