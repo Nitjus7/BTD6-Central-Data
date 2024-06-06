@@ -129,7 +129,7 @@
     "store": {
         "shooty-turret": {
             "displayName": "Shooty Turret",
-            "icon": "",
+            "icon": "assets/geraldo1.png",
             "cost": 250,
             "range": 50,
             "refreshRounds": 5,
@@ -142,7 +142,7 @@
         },
         "stack-of-nails": {
             "displayName": "Stack of Old Nails",
-            "icon": "",
+            "icon": "assets/geraldo2.png",
             "cost": 50,
             "range": 50,
             "refreshRounds": 1,
@@ -154,7 +154,7 @@
         },
         "creepy-idol": {
             "displayName": "Creepy Idol",
-            "icon": "",
+            "icon": "assets/geraldo3.png",
             "cost": 100,
             "range": 32,
             "refreshRounds": 4,
@@ -167,7 +167,7 @@
         },
         "jar-of-pickles": {
             "displayName": "Jar of Pickles",
-            "icon": "",
+            "icon": "assets/geraldo4.png",
             "cost": 100,
             "refreshRounds": 4,
             "maxStock": 4,
@@ -178,7 +178,7 @@
         },
         "quincy-action-figure": {
             "displayName": "Rare Quincy Action Figure",
-            "icon": "",
+            "icon": "assets/geraldo5.png",
             "cost": 650,
             "refreshRounds": 4,
             "maxStock": 1,
@@ -190,7 +190,7 @@
         },
         "see-invisibility-potion": {
             "displayName": "See Invisibility Potion",
-            "icon": "",
+            "icon": "assets/geraldo6.png",
             "cost": 200,
             "refreshRounds": 10,
             "maxStock": 2,
@@ -200,7 +200,7 @@
         },
         "tube-of-amaz-o-glue": {
             "displayName": "Tube of Amaz-o-Glue",
-            "icon": "",
+            "icon": "assets/geraldo7.png",
             "cost": 100,
             "refreshRounds": 3,
             "maxStock": 3,
@@ -210,7 +210,7 @@
         },
         "sharpening-stone": {
             "displayName": "Sharpening Stone",
-            "icon": "",
+            "icon": "assets/geraldo8.png",
             "cost": 200,
             "refreshRounds": 5,
             "maxStock": 3,
@@ -221,7 +221,7 @@
         },
         "worn-heros-cape": {
             "displayName": "Worn Hero's Cape",
-            "icon": "",
+            "icon": "assets/geraldo9.png",
             "cost": 1500,
             "refreshRounds": 5,
             "maxStock": 2,
@@ -231,7 +231,7 @@
         },
         "blade-trap": {
             "displayName": "Blade Trap",
-            "icon": "",
+            "icon": "assets/geraldo10.png",
             "cost": 650,
             "refreshRounds": 5,
             "maxStock": 4,
@@ -242,7 +242,7 @@
         },
         "hot-sauce": {
             "displayName": "Bottle of 'Gerry's Fire' Hot Sauce",
-            "icon": "",
+            "icon": "assets/geraldo11.png",
             "cost": 500,
             "refreshRounds": 2,
             "maxStock": 3,
@@ -254,7 +254,7 @@
         },
         "fertilizer": {
             "displayName": "Fertilizer",
-            "icon": "",
+            "icon": "assets/geraldo12.png",
             "cost": 300,
             "refreshRounds": 3,
             "maxStock": 4,
@@ -264,7 +264,7 @@
         },
         "pet-rabbit": {
             "displayName": "Pet Rabbit",
-            "icon": "",
+            "icon": "assets/geraldo13.png",
             "cost": 1500,
             "refreshRounds": 3,
             "maxStock": 2,
@@ -276,7 +276,7 @@
         },
         "rejuv-potion": {
             "displayName": "Rejuv Potion",
-            "icon": "",
+            "icon": "assets/geraldo14.png",
             "cost": 2000,
             "refreshRounds": 5,
             "maxStock": 2,
@@ -285,7 +285,7 @@
         },
         "genie-bottle": {
             "displayName": "Genie Bottle",
-            "icon": "",
+            "icon": "assets/geraldo15.png",
             "cost": 2000,
             "range": 100,
             "refreshRounds": 5,
@@ -298,7 +298,7 @@
         },
         "paragon-power-totem": {
             "displayName": "Paragon Power Totem",
-            "icon": "",
+            "icon": "assets/geraldo16.png",
             "cost": 26000,
             "refreshRounds": 1,
             "maxStock": 2,
