@@ -417,13 +417,13 @@
             "level": 14,
             "editStore": [
                 {
-                    "store-item": "see-invisiblity-potion",
+                    "store-item": "see-invisibility-potion",
                     "target": "durationRounds",
                     "type": "add",
                     "value": 5
                 },
                 {
-                    "store-item": "see-invisiblity-potion",
+                    "store-item": "see-invisibility-potion",
                     "target": "description",
                     "type": "replace",
                     "value": "Gives a selected Monkey camo detection and +20% range."
