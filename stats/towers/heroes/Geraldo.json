@@ -406,6 +406,12 @@
                     "value": 4
                 },
                 {
+                    "target": "dart",
+                    "item": "attackRate",
+                    "type": "divide",
+                    "value": 1.875
+                },
+                {
                     "target": "nails",
                     "item": "dmgBase",
                     "type": "add",
