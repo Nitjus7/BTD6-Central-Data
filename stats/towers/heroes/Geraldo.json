@@ -145,7 +145,6 @@
             "displayName": "Stack of Old Nails",
             "icon": "assets/geraldo2.png",
             "cost": 50,
-            "range": 50,
             "refreshRounds": 1,
             "maxStock": 10,
             "durationRounds": null,
