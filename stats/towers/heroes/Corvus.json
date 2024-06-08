@@ -37,7 +37,7 @@
             "lifespan": 1.6,
             "damageType": "plasma",
             "camo": false,
-            "description": "Emits Lightning on each hit. Max 0.05s per Lightning.",
+            "description": "Emits Lightning on each hit. Max 0.15s per Lightning.",
             "emissions": ["lightning"]
         },
         "lightning": {
@@ -212,7 +212,7 @@
             "icon": "assets/corvus6.png",
             "cost": 300,
             "duration": 24,
-            "cooldown": 45,
+            "cooldown": 55,
             "description": "Creates a clone of Spirit that always targets first and receives the same spells.",
             "unlockLevel": 3
         },
@@ -230,7 +230,7 @@
             "icon": "assets/corvus8.png",
             "cost": 180,
             "cooldown": 45,
-            "description": "Spirit travels backwards on one track (follows first targeting), doing 12 damage on up to 150 bloons in its path.",
+            "description": "Spirit travels backwards on one track (follows first targeting), doing 15 damage on up to 150 bloons in its path.",
             "unlockLevel": 4
         },
         "frostbound": {
