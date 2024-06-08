@@ -175,6 +175,29 @@
             "hasAttacks": ["lightning-rod"],
             "unlockLevel": 1
         },
+        "aggression": {
+            "displayName": "Aggression",
+            "icon": "assets/corvus2.png",
+            "cost": "50 + 5 per second",
+            "description": "Spirit gets 70% attack cooldown and +40% size.",
+            "unlockLevel": 5
+        },
+        "malevolence": {
+            "displayName": "Malevolence",
+            "icon": "assets/corvus3.png",
+            "cost": "60 + 6 per second",
+            "description": "Spirit is disabled. A Spirit Aura is created on top of Corvus. Disables all spells except Spear and Ancestral Might while active.",
+            "hasAttacks": ["spirit-aura"],
+            "unlockLevel": 7
+        },
+        "storm": {
+            "displayName": "Storm",
+            "icon": "assets/corvus4.png",
+            "cost": "120 + 15 per second",
+            "description": "Spirit shoots Blades.",
+            "hasAttacks": ["blades"],
+            "unlockLevel": 8
+        },
         "repel": {
             "displayName": "Repel",
             "icon": "assets/corvus5.png",
@@ -182,13 +205,6 @@
             "duration": 15,
             "cooldown": 45,
             "description": "Spirit pushes back up to 10 nearby regular Bloons by 4 units every 0.1s. Cannot affect Blimps.",
-            "unlockLevel": 1
-        },
-        "nourishment": {
-            "displayName": "Nourishment",
-            "icon": "assets/corvus13.png",
-            "cost": "All Mana",
-            "description": "Converts all of Corvus' stored Mana into 2x as much Hero XP.",
             "unlockLevel": 1
         },
         "echo": {
@@ -200,7 +216,7 @@
             "description": "Creates a clone of Spirit that always targets first and receives the same spells.",
             "unlockLevel": 3
         },
-        "haste": {
+         "haste": {
             "displayName": "Haste",
             "icon": "assets/corvus7.png",
             "cost": 50,
@@ -217,22 +233,6 @@
             "description": "Spirit travels backwards on one track (follows first targeting), doing 12 damage on up to 150 bloons in its path.",
             "unlockLevel": 4
         },
-        "soul-barrier": {
-            "displayName": "Soul Barrier",
-            "icon": "assets/corvus14.png",
-            "cost": 40,
-            "duration": 10,
-            "cooldown": 60,
-            "description": "Corvus uses all his stored Mana as lives. Can absorb up to 400 lives.",
-            "unlockLevel": 4
-        },
-        "aggression": {
-            "displayName": "Aggression",
-            "icon": "assets/corvus2.png",
-            "cost": "50 + 5 per second",
-            "description": "Spirit gets 70% attack cooldown and +40% size.",
-            "unlockLevel": 5
-        },
         "frostbound": {
             "displayName": "Frostbound",
             "icon": "assets/corvus9.png",
@@ -241,15 +241,6 @@
             "cooldown": 45,
             "description": "Every 0.1s, Spirit applies Freeze status on up to 10 Bloons it touches.",
             "hasStatuses": ["freeze"],
-            "unlockLevel": 5
-        },
-        "vision": {
-            "displayName": "Vision",
-            "icon": "assets/corvus15.png",
-            "cost": 170,
-            "duration": 15,
-            "cooldown": 30,
-            "description": "Spirit gets camo detection and can decamo.",
             "unlockLevel": 5
         },
         "ember": {
@@ -262,14 +253,6 @@
             "hasAttacks": ["wall-of-fire"],
             "unlockLevel": 6
         },
-        "malevolence": {
-            "displayName": "Malevolence",
-            "icon": "assets/corvus3.png",
-            "cost": "60 + 6 per second",
-            "description": "Spirit is disabled. A Spirit Aura is created on top of Corvus. Disables all spells except Spear and Ancestral Might while active.",
-            "hasAttacks": ["spirit-aura"],
-            "unlockLevel": 7
-        },
         "ancestral-might": {
             "displayName": "Ancestral Might",
             "icon": "assets/corvus11.png",
@@ -280,22 +263,6 @@
             "hasAttacks": ["hand"],
             "unlockLevel": 7
         },
-        "storm": {
-            "displayName": "Storm",
-            "icon": "assets/corvus4.png",
-            "cost": "120 + 15 per second",
-            "description": "Spirit shoots Blades.",
-            "hasAttacks": ["blades"],
-            "unlockLevel": 8
-        },
-        "recovery": {
-            "displayName": "Recovery",
-            "icon": "assets/corvus16.png",
-            "cost": 140,
-            "cooldown": 30,
-            "description": "Corvus is completely disabled. All of Corvus' spells except Nourishment recharge twice as fast while this is active.",
-            "unlockLevel": 10
-        },
         "overload": {
             "displayName": "Overload",
             "icon": "assets/corvus12.png",
@@ -304,6 +271,39 @@
             "description": "Spirit instantly creates a Spirit Explosion on its location and is disabled for 10 seconds.",
             "hasAttacks": ["spirit-explosion"],
             "unlockLevel": 13
+        },
+        "nourishment": {
+            "displayName": "Nourishment",
+            "icon": "assets/corvus13.png",
+            "cost": "All Mana",
+            "description": "Converts all of Corvus' stored Mana into 2x as much Hero XP.",
+            "unlockLevel": 1
+        },
+        "soul-barrier": {
+            "displayName": "Soul Barrier",
+            "icon": "assets/corvus14.png",
+            "cost": 40,
+            "duration": 10,
+            "cooldown": 60,
+            "description": "Corvus uses all his stored Mana as lives. Can absorb up to 400 lives.",
+            "unlockLevel": 4
+        },
+        "vision": {
+            "displayName": "Vision",
+            "icon": "assets/corvus15.png",
+            "cost": 170,
+            "duration": 15,
+            "cooldown": 30,
+            "description": "Spirit gets camo detection and can decamo.",
+            "unlockLevel": 5
+        },
+        "recovery": {
+            "displayName": "Recovery",
+            "icon": "assets/corvus16.png",
+            "cost": 140,
+            "cooldown": 30,
+            "description": "Corvus is completely disabled. All of Corvus' spells except Nourishment recharge twice as fast while this is active.",
+            "unlockLevel": 10
         }
     },
     "levels": [
