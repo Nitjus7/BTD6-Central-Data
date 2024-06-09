@@ -43,7 +43,7 @@
         "lightning": {
             "displayName": "Lightning",
             "dmgBase": 2,
-            "pierce": 15,
+            "pierce": 4,
             "damageType": "plasma",
             "camo": false
         },
