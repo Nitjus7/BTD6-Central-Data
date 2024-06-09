@@ -105,7 +105,7 @@
             "attackRate": 0.2,
             "damageType": "plasma",
             "camo": false,
-            "special": "Generates 1 Mana per damage dealt. Ability is cancelled if it hits a Purple Bloon."
+            "special": "Generates 1 Mana per damage dealt. Ability stops early if it hits a Purple Bloon."
         },
         "spirit-explosion": {
             "displayName": "Spirit Explosion",
