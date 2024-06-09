@@ -1,7 +1,7 @@
 {
     "hero": "Ezili",
     "cost": 600,
-    "xpCurve": 1,
+    "xpCurve": 1.425,
     "footprintRadius": 7,
     "range": 38,
     "projectiles": {
