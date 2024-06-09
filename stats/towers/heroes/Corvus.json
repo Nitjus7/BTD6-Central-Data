@@ -639,6 +639,12 @@
                     "item": "dmgBase",
                     "type": "add",
                     "value": 1500
+                },
+                {
+                    "target": "spirit-explosion",
+                    "item": "pierce",
+                    "type": "add",
+                    "value": 300
                 }
             ],
             "editStore": [
