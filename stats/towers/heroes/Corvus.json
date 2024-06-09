@@ -361,7 +361,15 @@
         {
             "level": 7,
             "addAbility": "spirit-walk",
-            "description": "Learns Malevolence and Ancestral Might."
+            "description": "Learns Malevolence and Ancestral Might.",
+            "editStore": [
+                {
+                    "store-item": "haste",
+                    "target": "description",
+                    "key": "replace",
+                    "value": "Spirit gets +80% movement speed and +45% faster turn speed."
+                }
+            ]
         },
         {
             "level": 8,
@@ -584,20 +592,23 @@
         },
         {
             "level": 18,
-            "addProperties": [
+            "editItems": [
                 {
                     "target": "lightning",
-                    "key": "dmgBase",
+                    "item": "dmgBase",
+                    "type": "add",
                     "value": 6
                 },
                 {
                     "target": "blades",
-                    "key": "dmgBase",
+                    "item": "dmgBase",
+                    "type": "add",
                     "value": 1
                 },
                 {
                     "target": "blades",
-                    "key": "pierce",
+                    "item": "pierce",
+                    "type": "add",
                     "value": 8
                 }
             ]
