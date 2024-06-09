@@ -628,7 +628,7 @@
                     "store-item": "trample",
                     "target": "description",
                     "key": "replace",
-                    "value": "Spirit travels backwards on one track (follows first targeting), doing 90 damage on up to 800 bloons in its path."
+                    "value": "Spirit travels backwards on one track (follows first targeting), doing 130 damage on up to 800 bloons in its path."
                 }
             ]
         },
