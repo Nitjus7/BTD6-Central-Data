@@ -341,7 +341,7 @@
                     "target": "spirit",
                     "item": "dmgBase",
                     "type": "add",
-                    "value": 1
+                    "value": 2
                 },
                 {
                     "target": "explosion",
