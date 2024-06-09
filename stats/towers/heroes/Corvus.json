@@ -510,6 +510,14 @@
                     "type": "add",
                     "value": 4
                 }
+            ],
+            "editStore": [
+                {
+                    "store-item": "aggression",
+                    "target": "description",
+                    "type": "replace",
+                    "value": "Spirit gets 50% attack cooldown and +40% size."
+                }
             ]
         },
         {
