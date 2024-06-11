@@ -549,7 +549,6 @@
         },
         {
             "level": 19,
-            "addRange": 3,
             "editItems": [
                 {
                     "target": "lightning",
