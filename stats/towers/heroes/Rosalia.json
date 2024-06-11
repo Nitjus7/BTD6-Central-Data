@@ -175,7 +175,12 @@
                 {
                     "target": "grenade",
                     "key": "description",
-                    "value": "Can explode 3 times, bouncing to nearby targets. Gets +2 projectiles every 10th shot."
+                    "value": "Can explode 3 times, bouncing to nearby targets."
+                },
+                {
+                    "target": "grenade",
+                    "key": "special",
+                    "value": "Gets +2 projectiles every 10th shot."
                 }
             ]
         },
@@ -242,7 +247,7 @@
                     "target": "grenade",
                     "item": "description",
                     "type": "replace",
-                    "value": "Can explode 4 times, bouncing to nearby targets. Gets +2 projectiles every 10th shot."
+                    "value": "Can explode 4 times, bouncing to nearby targets."
                 }
             ]
         },
@@ -307,7 +312,7 @@
                     "target": "grenade",
                     "item": "description",
                     "type": "replace",
-                    "value": "Can explode 4 times, bouncing to nearby targets and creating Cluster Bombs on each hit. Gets +2 projectiles every 10th shot."
+                    "value": "Can explode 4 times, bouncing to nearby targets and creating Cluster Bombs on each hit."
                 }
             ],
             "addProperties": [
