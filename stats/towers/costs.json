@@ -1,7 +1,6 @@
 {
     "DartMonkey": {
         "cost": 200,
-        "paragon": 150000,
         "upgrades": {
             "top": {
                 "1": 140,
@@ -28,7 +27,6 @@
     },
     "BoomerangMonkey": {
         "cost": 325,
-        "paragon": 275000,
         "upgrades": {
             "top": {
                 "1": 200,
@@ -185,7 +183,6 @@
     },
     "MonkeySub": {
         "cost": 325,
-        "paragon": 400000,
         "upgrades": {
             "top": {
                 "1": 130,
@@ -212,7 +209,6 @@
     },
     "MonkeyBuccaneer": {
         "cost": 500,
-        "paragon": 550000,
         "upgrades": {
             "top": {
                 "1": 275,
@@ -239,7 +235,6 @@
     },
     "MonkeyAce": {
         "cost": 800,
-        "paragon": 900000,
         "upgrades": {
             "top": {
                 "1": 650,
@@ -344,7 +339,6 @@
     },
     "WizardMonkey": {
         "cost": 375,
-        "paragon": 750000,
         "upgrades": {
             "top": {
                 "1": 150,
@@ -397,7 +391,6 @@
     },
     "NinjaMonkey": {
         "cost": 500,
-        "paragon": 500000,
         "upgrades": {
             "top": {
                 "1": 300,
@@ -554,7 +547,6 @@
     },
     "EngineerMonkey": {
         "cost": 400,
-        "paragon": 650000,
         "upgrades": {
             "top": {
                 "1": 500,
@@ -604,5 +596,15 @@
                 "5": 30000
             }
         }
+    },
+    "paragons": {
+        "ApexPlasmaMaster": 150000,
+        "GlaiveDominus": 275000,
+        "NauticSiegeCore": 400000,
+        "NavarchOfTheSeas": 550000,
+        "GoliathDoomship": 900000,
+        "MagusPerfectus": 750000,
+        "AscendedShadow": 500000,
+        "MasterBuilder": 650000
     }
 }
