@@ -63,7 +63,7 @@
         "sacrificial-totem": {
             "displayName": "Sacrificial Totem",
             "cooldown": 90,
-            "duration": 10,
+            "duration": 30,
             "range": 78,
             "description": "Takes away 10 lives. Gives all towers in range 85% attack cooldown, +1 pierce, +25% range, +25% projectile speed, and camo detection. Wizards instead get 80% attack cooldown and +2 pierce."
         },
@@ -247,7 +247,7 @@
                     "target": "sacrificial-totem",
                     "item": "duration",
                     "type": "add",
-                    "value": 20
+                    "value": 30
                 },
                 {
                     "target": "sacrificial-totem",
