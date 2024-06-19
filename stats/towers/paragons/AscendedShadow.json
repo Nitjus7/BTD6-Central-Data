@@ -12,12 +12,13 @@
                 "base": 32,
                 "bonusCamo": 6,
                 "bonusBoss": 32,
-                "bonusStunned": 15
+                "bonusStunned": 15,
+                "bonusStickied": 15
             },
             "pierce": 4,
             "rate": 0.217,
             "projectiles": 8,
-            "special": "Has strong seeking. Deals 15 extra damage to targets with a Sticky Bomb attached to them.",
+            "special": "Has strong seeking. Deals extra damage to targets with a Sticky Bomb attached to them (see: Stickied)",
             "emits": [
                 {
                     "name": "Distraction",
